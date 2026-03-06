@@ -1,0 +1,69 @@
+{
+  "_metadata": {
+    "version": "1.0.0",
+    "last_updated": "2026-03-06",
+    "description": "Data Syarat & Ketentuan general untuk halaman S&K website KADENA Gestun. Semua value dalam plain text, styling dilakukan oleh website."
+  },
+  "page_title": "Syarat & Ketentuan",
+  "terms": [
+    {
+      "id": "jam-operasional",
+      "text": "Open setiap hari (termasuk hari libur) jam 07:00 s.d 23:00 WIB.",
+      "icon": "clock"
+    },
+    {
+      "id": "verifikasi-nomor-wa",
+      "text": "Pastikan nomor WhatsApp admin Kadena yang anda hubungi saat transaksi adalah nomor asli satu-satunya (0882-222-67-334). Segala kerugian yang ditimbulkan akibat pihak-pihak yang mengaku sebagai Kadena Gestun, menggunakan logo Kadena Gestun, atau memakai nama Kadena Gestun dengan nomor WhatsApp berbeda adalah di luar tanggung jawab kami.",
+      "icon": "shield"
+    },
+    {
+      "id": "tarif-fee",
+      "text": "Tarif fee berbeda untuk masing-masing jenis pencairan paylater, mengacu pada halaman Daftar Harga & Tarif yang update tiap 1 bulan sekali.",
+      "icon": "price-tag",
+      "reference_path": "/harga",
+      "reference_label": "Lihat Daftar Harga & Tarif"
+    },
+    {
+      "id": "transaksi-milik-sendiri",
+      "text": "Kadena Gestun hanya melayani transaksi pencairan limit paylater / kartu kredit milik sendiri, tidak bisa mewakili istri, milik teman, milik pacar, atau milik orang lain. Jadi, nama pemilik akun paylater / kartu kredit yang tercantum wajib sama dengan nama pemilik rekening / e-wallet pada saat pencairan.",
+      "icon": "user-check"
+    },
+    {
+      "id": "rekening-bebas-biaya",
+      "text": "Kami menerima rekening pencairan bank apapun dan e-wallet jenis apapun tanpa tambahan biaya admin.",
+      "icon": "wallet"
+    },
+    {
+      "id": "limit-harus-tersedia",
+      "text": "Sebelum transaksi, pastikan anda sudah memiliki limit kredit atau sudah mendaftar pada layanan paylater yang dimaksud. Kami tidak buka jasa bantu pendaftaran atau pengajuan paylater apapun.",
+      "icon": "info"
+    },
+    {
+      "id": "provider-tidak-dilayani",
+      "text": "Saat ini sedang tidak bisa melayani pencairan limit: Traveloka Paylater, Tiket.com Paylater, AEON, dan Home Credit Pembiayaan / Belanja Online.",
+      "icon": "x-circle",
+      "excluded_providers": [
+        "Traveloka Paylater",
+        "Tiket.com Paylater",
+        "AEON",
+        "Home Credit Pembiayaan / Belanja Online"
+      ]
+    },
+    {
+      "id": "ketentuan-cod",
+      "text": "Untuk transaksi COD tatap-muka, silahkan merujuk pada syarat ketentuan di halaman COD.",
+      "icon": "map-pin",
+      "reference_path": "/cod",
+      "reference_label": "Lihat Ketentuan COD"
+    },
+    {
+      "id": "tidak-buka-reseller",
+      "text": "Kadena Gestun tidak membuka program reseller, pinjam QRIS, pinjam toko atau sistem bagi hasil dalam bentuk apapun.",
+      "icon": "slash"
+    }
+  ],
+  "whatsapp": {
+    "number": "0882-222-67-334",
+    "url": "https://wa.me/6288222267334"
+  }
+}
