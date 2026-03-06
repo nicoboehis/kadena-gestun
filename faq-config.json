@@ -1,0 +1,108 @@
+{
+  "_metadata": {
+    "version": "1.0.0",
+    "last_updated": "2026-03-06",
+    "source": "FAQ UNTUK WEBSITE (6 Mar 2026).pdf",
+    "description": "Data FAQ untuk halaman FAQ website KADENA Gestun. Semua answer dalam plain text, styling dilakukan oleh website."
+  },
+  "faqs": [
+    {
+      "id": "apa-itu-gestun",
+      "category": "umum",
+      "question": "Gestun itu maksudnya pencairan apa ya?",
+      "answer": "Gestun adalah singkatan dari 'gesek tunai', yaitu proses mencairkan limit paylater, kartu kredit, atau layanan kredit digital lainnya menjadi uang tunai (saldo) yang bisa langsung digunakan. Di Kadena Gestun, kami membantu kamu mencairkan limit tersebut dengan aman dan mudah melalui berbagai metode seperti scan QRIS, check-out produk di marketplace (Shopee, Tokopedia, dll.), atau pembayaran tagihan/token PLN. Semua dilakukan secara online."
+    },
+    {
+      "id": "cara-transaksi",
+      "category": "umum",
+      "question": "Caranya gimana kalau saya mau transaksi gestun?",
+      "answer": "Kirim pesan ke nomor WhatsApp resmi kami: 0882-222-67-334. Sampaikan informasi berikut: (1) Aplikasi paylater/kartu kredit yang ingin dicairkan; (2) Nominal transaksi yang diinginkan. Setelah menghubungi admin, Anda akan diberikan instruksi sesuai metode transaksi yang dipilih."
+    },
+    {
+      "id": "biaya-fee",
+      "category": "tarif",
+      "question": "Berapa biaya fee / potongan gestun Kadena?",
+      "answer": "Biaya fee admin atau potongan gestun di Kadena Gestun bervariasi tergantung pada aplikasi paylater, metode transaksi, dan nominal yang dicairkan. Secara umum, fee berkisar antara 5% hingga 16% dari total transaksi. Daftar lengkap katalog fee bisa Anda lihat di halaman Daftar Harga & Tarif.",
+      "reference_path": "/harga"
+    },
+    {
+      "id": "durasi-pencairan",
+      "category": "tarif",
+      "question": "Berapa lama proses pencairan sampai saya menerima uangnya?",
+      "answer": "Proses pencairan di Kadena Gestun bervariasi tergantung jenis aplikasi paylater dan metode yang dilakukan untuk transaksi. Daftar lengkap durasi pencairan bisa dilihat pada halaman Daftar Harga & Tarif.",
+      "reference_path": "/harga"
+    },
+    {
+      "id": "keamanan-transaksi",
+      "category": "keamanan",
+      "question": "Apakah transaksi disini aman?",
+      "answer": "Di Kadena Gestun, kami menjamin bahwa semua transaksi 100% amanah dan transparan. Kami sudah melayani ribuan pelanggan dengan aman dan lancar sejak tahun 2021. Banyak di antara mereka yang memberikan testimoni positif dan bukti transaksi nyata yang bisa Anda lihat di halaman Testimoni & Bukti Transaksi. Semua transaksi hanya dilakukan melalui nomor rekening resmi yang terdaftar atas nama owner. Anda juga bisa melakukan cek riwayat tags nomor WhatsApp kami di aplikasi GetContact untuk memastikan riwayat dan penanda yang aman. Kadena Gestun dikelola langsung oleh owner yang bertanggung jawab penuh atas setiap transaksi. Anda bisa follow akun Instagram pribadi owner di @tesa_ria untuk membangun kepercayaan lebih lanjut.",
+      "reference_path": "/testimoni"
+    },
+    {
+      "id": "layanan-cod",
+      "category": "layanan",
+      "question": "Apakah bisa transaksi COD / bertemu langsung?",
+      "answer": "Layanan COD transaksi tatap muka bisa dilakukan di seluruh wilayah Jakarta Selatan, Depok, dan Kabupaten Bogor. Layanan COD hanya bisa dilakukan untuk beberapa jenis layanan gestun pada jenis paylater tertentu, silahkan temukan informasi lengkap tentang layanan COD kami beserta syarat-ketentuannya pada halaman COD Transaksi Tatap Muka. Catatan Penting: Transaksi COD hanya dapat dilakukan setelah ada konfirmasi dari admin. Untuk transaksi online, kami menjamin keamanan dan proses yang mudah. Jika Anda ragu, silakan chat admin via WhatsApp untuk informasi lebih lanjut!",
+      "reference_path": "/cod"
+    },
+    {
+      "id": "aplikasi-tidak-dilayani",
+      "category": "layanan",
+      "question": "Aplikasi apa saja yang TIDAK bisa proses gestun disini?",
+      "answer": "Aplikasi yang tidak bisa diproses: (1) Traveloka PayLater; (2) Tiket Com PayLater; (3) Bukalapak PayLater; (4) Home Credit Pembiayaan/Belanja Offline."
+    },
+    {
+      "id": "pendaftaran-reseller",
+      "category": "layanan",
+      "question": "Apakah bisa mendaftar sebagai reseller?",
+      "answer": "Mohon maaf, Kadena Gestun tidak membuka pendaftaran untuk reseller. Kami hanya melayani transaksi langsung antara pemilik akun paylater/kartu kredit dengan admin kami. Tidak ada program atau kerja sama dalam bentuk reseller gestun, pinjam barcode, ataupun sistem bagi hasil. Terima kasih atas pengertiannya!"
+    },
+    {
+      "id": "transaksi-mewakili-orang-lain",
+      "category": "keamanan",
+      "question": "Apakah bisa transaksi mewakili orang lain, misal akun paylaternya atau kartu kreditnya milik istri, keluarga, pacar, dll?",
+      "answer": "Tidak, kami tidak bisa melakukan transaksi untuk mewakili orang lain. Untuk menghindari penipuan dan memastikan keamanan, rekening pencairan harus atas nama yang sama dengan pemilik akun paylater atau kartu kredit yang digunakan dalam transaksi. Jadi, jika akun paylater atau kartu kredit tersebut bukan milik Anda (misalnya milik istri, keluarga, atau pacar), maka transaksi tidak dapat diproses. Pastikan semua data yang digunakan adalah milik Anda sendiri agar transaksi berjalan lancar dan aman."
+    },
+    {
+      "id": "pinjaman-tunai",
+      "category": "layanan",
+      "question": "Apakah disini melayani peminjaman tunai?",
+      "answer": "Tidak, kami tidak melayani pinjaman tunai. Kami hanya membantu proses pencairan limit paylater atau kartu kredit yang sudah ada di akun Anda menjadi saldo/uang tunai. Limit yang bisa dicairkan berasal dari aplikasi seperti Shopee PayLater, Kredivo, Akulaku, GoPayLater, dan sejenisnya, atau melalui kartu kredit yang sudah terdaftar atas nama Anda. Pastikan Anda sudah memiliki limit aktif di salah satu aplikasi paylater atau kartu kredit yang akan dipakai transaksi."
+    },
+    {
+      "id": "gestun-edc",
+      "category": "layanan",
+      "question": "Apakah bisa gestun kartu kredit dengan cara gesek mesin EDC?",
+      "answer": "Tidak, kami tidak melayani gestun kartu kredit dengan cara gesek mesin EDC. Kami hanya melayani pencairan limit kartu kredit melalui metode scan QRIS, e-invoicing, atau check-out produk di marketplace seperti Shopee dan Tokopedia. Metode gestun dengan gesek mesin EDC tidak tersedia karena tidak sesuai dengan sistem operasional kami. Jika Anda tertarik menggunakan layanan kami, pastikan untuk memilih salah satu metode yang disediakan agar transaksi dapat berjalan lancar dan aman."
+    },
+    {
+      "id": "kewajiban-cicilan",
+      "category": "umum",
+      "question": "Apakah saya tetap harus membayar / cicil limit yang telah saya gunakan untuk transaksi gestun?",
+      "answer": "Ya, Anda tetap harus membayar atau mencicil limit yang telah digunakan untuk transaksi gestun sesuai dengan ketentuan dari aplikasi paylater atau kartu kredit yang digunakan. Gestun hanya memindahkan limit tersebut menjadi uang tunai atau saldo di rekening Anda, namun kewajiban pembayaran cicilan tetap berlaku seperti biasa, termasuk bunga atau biaya lainnya yang mungkin dikenakan oleh aplikasi atau bank terkait. Pastikan Anda memahami syarat dan ketentuan cicilan agar tidak terjadi kendala saat pelunasan."
+    }
+  ],
+  "categories": {
+    "umum": {
+      "label": "Umum",
+      "description": "Pertanyaan umum seputar layanan gestun"
+    },
+    "tarif": {
+      "label": "Tarif & Durasi",
+      "description": "Pertanyaan seputar biaya fee dan durasi pencairan"
+    },
+    "keamanan": {
+      "label": "Keamanan & Kepercayaan",
+      "description": "Pertanyaan seputar keamanan transaksi dan verifikasi"
+    },
+    "layanan": {
+      "label": "Layanan & Ketentuan",
+      "description": "Pertanyaan seputar jenis layanan, batasan, dan ketentuan"
+    }
+  },
+  "whatsapp": {
+    "number": "0882-222-67-334",
+    "url": "https://wa.me/6288222267334"
+  }
+}
