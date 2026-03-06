@@ -187,8 +187,8 @@
               "transaction_type": "Scan QRIS",
               "method": "qris",
               "fee_percent": 6,
-              "processing_time": "5 menit",
-              "processing_time_minutes": 5
+              "processing_time": "4 menit",
+              "processing_time_minutes": 4
             }
           ]
         },
