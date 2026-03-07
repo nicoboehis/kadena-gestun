@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO -->
-  <title>Syarat & Ketentuan — Layanan Gestun Paylater & Kartu Kredit | KADENA</title>
-  <meta name="description" content="Syarat dan ketentuan layanan gestun (pencairan limit) paylater dan kartu kredit di KADENA. Baca sebelum bertransaksi agar prosesnya lancar.">
-  <meta name="keywords" content="syarat ketentuan gestun, aturan gestun paylater, ketentuan layanan gestun, syarat gestun kartu kredit, KADENA gestun">
+  <title>Daftar Harga & Tarif Gestun Paylater & Kartu Kredit — Simulasi Biaya | KADENA</title>
+  <meta name="description" content="Lihat daftar lengkap tarif fee gestun semua provider paylater & kartu kredit. Hitung simulasi biaya pencairan limit Anda. Tarif all-inclusive, tanpa biaya tersembunyi.">
+  <meta name="keywords" content="harga gestun, tarif gestun paylater, fee gestun shopee paylater, biaya gestun kredivo, kalkulator gestun, simulasi gestun, fee gestun kartu kredit">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://kadenagestun.my.id/syarat-ketentuan.html">
+  <link rel="canonical" href="https://kadenagestun.my.id/harga.html">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Syarat & Ketentuan — Layanan Gestun | KADENA">
-  <meta property="og:description" content="Syarat dan ketentuan layanan gestun paylater dan kartu kredit di KADENA. Baca sebelum bertransaksi.">
-  <meta property="og:url" content="https://kadenagestun.my.id/syarat-ketentuan.html">
+  <meta property="og:title" content="Daftar Harga & Simulasi Tarif Gestun — KADENA">
+  <meta property="og:description" content="Lihat tarif fee gestun semua provider paylater & kartu kredit. Simulasi biaya pencairan limit Anda.">
+  <meta property="og:url" content="https://kadenagestun.my.id/harga.html">
   <meta property="og:image" content="https://kadenagestun.my.id/assets/images/og-image.png">
   <meta property="og:site_name" content="KADENA Gestun">
   <meta property="og:locale" content="id_ID">
@@ -33,40 +33,50 @@
 
   <!-- Page-specific styles -->
   <style>
-    .breadcrumb{padding:var(--space-sm) 0;font-size:var(--font-size-sm);color:var(--text-tertiary)}
-    .breadcrumb a{color:var(--primary);text-decoration:none}
-    .breadcrumb a:hover{text-decoration:underline}
-    .breadcrumb span{margin:0 var(--space-xs)}
+    /* Calculator Widget */
+    .calculator-widget { background: var(--bg-card); border-radius: var(--radius-lg); padding: var(--space-xl); border: 1px solid var(--border); max-width: 560px; margin: 0 auto; }
+    .calc-field { margin-bottom: var(--space-md); }
+    .calc-label { display: block; font-weight: 600; margin-bottom: var(--space-xs); color: var(--text-primary); font-size: var(--font-size-sm); }
+    .calc-provider-select,
+    .calc-nominal-input { width: 100%; padding: var(--space-sm) var(--space-md); border: 1px solid var(--border); border-radius: var(--radius-md); font-size: var(--font-size-base); font-family: inherit; background: var(--bg-primary); color: var(--text-primary); transition: border-color 0.2s; }
+    .calc-provider-select:focus,
+    .calc-nominal-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(11,188,214,0.15); }
+    .calc-input-wrap { display: flex; align-items: center; border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; transition: border-color 0.2s; }
+    .calc-input-wrap:focus-within { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(11,188,214,0.15); }
+    .calc-input-prefix { padding: var(--space-sm) var(--space-md); background: var(--bg-secondary); color: var(--text-secondary); font-weight: 600; font-size: var(--font-size-sm); border-right: 1px solid var(--border); white-space: nowrap; }
+    .calc-input-wrap .calc-nominal-input { border: none; border-radius: 0; }
+    .calc-input-wrap .calc-nominal-input:focus { box-shadow: none; }
+    .calc-error { background: #fef2f2; color: #dc2626; padding: var(--space-sm) var(--space-md); border-radius: var(--radius-md); font-size: var(--font-size-sm); margin-bottom: var(--space-md); }
+    .calc-result { margin-top: var(--space-lg); padding: var(--space-lg); background: linear-gradient(135deg, rgba(11,188,214,0.08), rgba(232,75,138,0.06)); border-radius: var(--radius-lg); text-align: center; }
+    .calc-result-main { margin-bottom: var(--space-md); }
+    .calc-result-label { display: block; font-size: var(--font-size-sm); color: var(--text-secondary); margin-bottom: var(--space-xs); }
+    .calc-net-amount { display: block; font-size: var(--font-size-2xl); font-weight: 800; color: var(--primary); }
+    .calc-result-details { display: flex; flex-direction: column; gap: var(--space-xs); font-size: var(--font-size-sm); color: var(--text-secondary); margin-bottom: var(--space-md); }
+    .calc-disclaimer { font-size: 0.75rem; color: var(--text-tertiary); font-style: italic; margin-top: var(--space-sm); margin-bottom: 0; }
 
-    .sk-list{max-width:800px;margin:0 auto;counter-reset:sk-counter}
-    .sk-item{display:flex;gap:var(--space-lg);padding:var(--space-lg) 0;border-bottom:1px solid var(--border)}
-    .sk-item:last-child{border-bottom:none}
-    .sk-number{flex-shrink:0;width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:var(--text-inverse);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:var(--font-size-lg)}
-    .sk-content{flex:1}
-    .sk-icon{font-size:1.4rem;margin-bottom:var(--space-xs);display:inline-block}
-    .sk-text{color:var(--text-secondary);font-size:var(--font-size-base);line-height:1.7}
-    .sk-text a{color:var(--primary);font-weight:600;text-decoration:none}
-    .sk-text a:hover{text-decoration:underline}
+    /* Price Table */
+    .price-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .price-table { width: 100%; border-collapse: collapse; font-size: var(--font-size-sm); }
+    .price-table th,
+    .price-table td { padding: var(--space-sm) var(--space-md); text-align: left; border-bottom: 1px solid var(--border); }
+    .price-table th { background: var(--bg-secondary); font-weight: 700; color: var(--text-primary); white-space: nowrap; }
+    .price-table tr:hover { background: rgba(11,188,214,0.04); }
+    .price-table td:nth-child(3) { font-weight: 700; color: var(--primary); }
+    .fee-note { max-width: 700px; margin: var(--space-xl) auto 0; padding: var(--space-lg); background: rgba(37,211,102,0.06); border: 1px solid rgba(37,211,102,0.2); border-radius: var(--radius-lg); text-align: center; font-size: var(--font-size-sm); }
+    .fee-note strong { color: var(--success); }
+    .cta-gradient { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); }
+    .cta-gradient h2, .cta-gradient p { color: var(--text-inverse); }
 
-    /* Warning box for excluded providers */
-    .warning-box{margin-top:var(--space-xl);padding:var(--space-lg);background:rgba(220,38,38,0.06);border:2px solid rgba(220,38,38,0.25);border-radius:var(--radius-lg);max-width:800px;margin-left:auto;margin-right:auto}
-    .warning-box__header{display:flex;align-items:center;gap:var(--space-sm);margin-bottom:var(--space-md)}
-    .warning-box__icon{font-size:1.6rem}
-    .warning-box__title{font-weight:700;color:#dc2626;font-size:var(--font-size-lg)}
-    .warning-box__text{color:var(--text-secondary);font-size:var(--font-size-sm);line-height:1.7;margin-bottom:var(--space-md)}
-    .excluded-list{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:var(--space-sm)}
-    .excluded-list li{padding:var(--space-xs) var(--space-md);background:rgba(220,38,38,0.08);border:1px solid rgba(220,38,38,0.2);border-radius:var(--radius-sm);font-weight:600;color:#dc2626;font-size:var(--font-size-sm)}
-
-    .cta-gradient{background:linear-gradient(135deg,var(--primary),var(--primary-dark))}
-    .cta-gradient h2,.cta-gradient p{color:var(--text-inverse)}
-
-    @media(max-width:767px){
-      .sk-item{gap:var(--space-md)}
-      .sk-number{width:40px;height:40px;font-size:var(--font-size-base)}
+    @media (max-width: 767px) {
+      .price-table thead { display: none; }
+      .price-table tr { display: block; margin-bottom: var(--space-md); border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; }
+      .price-table td { display: flex; justify-content: space-between; align-items: center; padding: var(--space-sm) var(--space-md); }
+      .price-table td::before { content: attr(data-label); font-weight: 600; color: var(--text-secondary); margin-right: var(--space-md); flex-shrink: 0; }
+      .price-table td:last-child { border-bottom: none; }
     }
   </style>
 
-  <!-- GA4 placeholder -->
+  <!-- Google Analytics (GA4) — UNCOMMENT & GANTI ID setelah punya -->
   <!--
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
@@ -76,10 +86,29 @@
     gtag('config', 'G-XXXXXXXXXX');
   </script>
   -->
+
+  <!-- Schema: Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Jasa Gestun Paylater & Kartu Kredit",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "KADENA Gestun",
+      "url": "https://kadenagestun.my.id"
+    },
+    "description": "Jasa pencairan limit paylater dan kartu kredit dengan tarif transparan. Proses cepat, aman, terpercaya.",
+    "url": "https://kadenagestun.my.id/harga.html",
+    "areaServed": { "@type": "Country", "name": "Indonesia" }
+  }
+  </script>
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- ============================================
+       NAVBAR
+       ============================================ -->
   <nav class="navbar" id="navbar">
     <div class="container navbar__inner">
       <a href="index.html" class="navbar__logo">
@@ -87,27 +116,28 @@
       </a>
       <div class="navbar__menu">
         <a href="index.html" class="navbar__link">Beranda</a>
-        <a href="cara-kerja.html" class="navbar__link">Cara Kerja</a>
-        <a href="harga.html" class="navbar__link">Harga</a>
+        <a href="harga.html" class="navbar__link active">Harga</a>
         <a href="faq.html" class="navbar__link">FAQ</a>
-        <a href="anti-penipuan.html" class="navbar__link">Anti-Penipuan</a>
         <a href="cod.html" class="navbar__link">COD</a>
+        <a href="testimoni.html" class="navbar__link">Testimoni</a>
+        <a href="syarat-ketentuan.html" class="navbar__link">S&K</a>
         <a href="blog/index.html" class="navbar__link">Blog</a>
       </div>
       <a href="https://wa.me/6288222267334?text=Halo%20KADENA%2C%20saya%20ingin%20cairkan%20limit%20paylater%2Fkartu%20kredit%20saya." class="navbar__cta" target="_blank" rel="noopener" onclick="trackWAClick('navbar_cta')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
         WhatsApp Kami
       </a>
-      <button class="navbar__toggle" id="navToggle" aria-label="Menu navigasi"><span></span><span></span><span></span></button>
+      <button class="navbar__toggle" id="navToggle" aria-label="Menu navigasi">
+        <span></span><span></span><span></span>
+      </button>
     </div>
     <div class="navbar__mobile" id="navMobile">
       <a href="index.html" class="navbar__mobile-link">Beranda</a>
-      <a href="cara-kerja.html" class="navbar__mobile-link">Cara Kerja</a>
-      <a href="harga.html" class="navbar__mobile-link">Harga & Kalkulator</a>
+      <a href="harga.html" class="navbar__mobile-link active">Harga & Kalkulator</a>
       <a href="faq.html" class="navbar__mobile-link">FAQ</a>
-      <a href="anti-penipuan.html" class="navbar__mobile-link">Anti-Penipuan</a>
       <a href="cod.html" class="navbar__mobile-link">Layanan COD</a>
-      <a href="syarat-ketentuan.html" class="navbar__mobile-link active">Syarat & Ketentuan</a>
+      <a href="testimoni.html" class="navbar__mobile-link">Testimoni</a>
+      <a href="syarat-ketentuan.html" class="navbar__mobile-link">Syarat & Ketentuan</a>
       <a href="blog/index.html" class="navbar__mobile-link">Blog</a>
       <a href="https://wa.me/6288222267334?text=Halo%20KADENA%2C%20saya%20ingin%20cairkan%20limit%20paylater%2Fkartu%20kredit%20saya." class="navbar__mobile-cta" target="_blank" rel="noopener" onclick="trackWAClick('mobile_menu_cta')">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
@@ -116,84 +146,145 @@
     </div>
   </nav>
 
-  <main>
-    <!-- BREADCRUMB -->
-    <section class="section" style="padding-bottom:0;">
-      <div class="container">
-        <div class="breadcrumb"><a href="index.html">Beranda</a><span>›</span><strong>Syarat & Ketentuan</strong></div>
-      </div>
-    </section>
 
-    <!-- HERO -->
-    <section class="hero section" style="padding-top:var(--space-lg);">
+  <main>
+
+    <!-- ============================================
+         KALKULATOR SIMULASI TARIF
+         ============================================ -->
+    <section class="hero section" id="kalkulator">
       <div class="container">
         <div class="section__header">
-          <span class="section__label">S&K</span>
-          <h1 class="section__title">Syarat & Ketentuan</h1>
-          <p class="section__subtitle">Harap baca dan pahami ketentuan berikut sebelum menggunakan layanan gestun di KADENA. Dengan bertransaksi, Anda dianggap telah menyetujui seluruh syarat di bawah ini.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- TERMS LIST -->
-    <section class="section" style="padding-top:0;" id="sk-section">
-      <div class="container">
-        <div class="sk-list" id="sk-list">
-          <p style="text-align:center;color:var(--text-tertiary);">Memuat data syarat & ketentuan...</p>
+          <span class="section__label">Kalkulator Simulasi Tarif</span>
+          <h1 class="section__title">Hitung Berapa yang Anda Terima</h1>
+          <p class="section__subtitle">Pilih jenis paylater atau kartu kredit, masukkan nominal, dan lihat estimasi dana bersih yang Anda terima. <strong>Tarif sudah all-inclusive</strong> — tidak ada biaya tambahan.</p>
         </div>
 
-        <!-- EXCLUDED PROVIDERS WARNING -->
-        <div class="warning-box reveal reveal-up" id="warning-box" style="display:none;">
-          <div class="warning-box__header">
-            <span class="warning-box__icon">⚠️</span>
-            <span class="warning-box__title">Provider yang TIDAK Dilayani</span>
+        <div class="calculator-widget reveal reveal-up">
+          <div class="calc-error" style="display:none;"></div>
+
+          <div class="calc-field">
+            <label class="calc-label">Jenis & Metode Transaksi</label>
+            <select class="calc-provider-select">
+              <option value="" disabled selected>Pilih jenis & metode transaksi</option>
+            </select>
           </div>
-          <p class="warning-box__text">Mohon maaf, saat ini KADENA <strong>tidak melayani</strong> transaksi gestun untuk provider berikut. Hal ini bisa berubah sewaktu-waktu — silakan tanyakan via WhatsApp untuk informasi terbaru.</p>
-          <ul class="excluded-list" id="excluded-list"></ul>
+
+          <div class="calc-field">
+            <label class="calc-label">Nominal Transaksi</label>
+            <div class="calc-input-wrap">
+              <span class="calc-input-prefix">Rp</span>
+              <input type="text" class="calc-nominal-input" placeholder="1.000.000" inputmode="numeric">
+            </div>
+          </div>
+
+          <button class="btn btn--primary btn--lg calc-btn" style="width:100%;">Hitung</button>
+
+          <div class="calc-result" style="display:none;">
+            <div class="calc-result-main">
+              <span class="calc-result-label">Anda Terima Bersih</span>
+              <span class="calc-net-amount"></span>
+            </div>
+            <div class="calc-result-details">
+              <span class="calc-fee-percent"></span>
+              <span class="calc-fee-amount"></span>
+              <span class="calc-processing-time"></span>
+            </div>
+            <p class="calc-disclaimer">* Tarif sudah mencakup seluruh biaya. Tidak ada potongan tambahan lainnya.</p>
+            <button class="btn btn--wa btn--lg calc-wa-btn" style="width:100%; margin-top:var(--space-md);">
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              Hubungi via WhatsApp
+            </button>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- FINAL CTA -->
+
+    <!-- ============================================
+         DAFTAR TARIF LENGKAP
+         ============================================ -->
+    <section class="section section--alt" id="daftar-tarif">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Daftar Tarif Lengkap</span>
+          <h2 class="section__title">Tarif Fee Semua Provider</h2>
+          <p class="section__subtitle">Berikut daftar lengkap tarif fee untuk semua provider paylater, pinjaman online, dan kartu kredit yang kami layani.</p>
+        </div>
+
+        <div class="price-table-wrap reveal reveal-up">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>Provider</th>
+                <th>Metode Transaksi</th>
+                <th>Fee</th>
+                <th>Estimasi Proses</th>
+              </tr>
+            </thead>
+            <tbody id="price-table-body">
+              <tr><td colspan="4" style="text-align:center; padding:var(--space-xl);">Memuat data tarif...</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="fee-note reveal reveal-up">
+          <p>✅ <strong>Tarif fee di atas sudah mencakup seluruh biaya transaksi.</strong><br>Tidak ada potongan biaya tambahan lainnya. Jumlah yang Anda terima = nominal transaksi dikurangi fee yang tertera.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         FINAL CTA
+         ============================================ -->
     <section class="section cta-gradient" id="cta-final">
-      <div class="container" style="text-align:center;max-width:640px;margin:0 auto;">
-        <h2 class="reveal reveal-up" style="font-size:var(--font-size-2xl);margin-bottom:var(--space-md);">Siap Bertransaksi?</h2>
-        <p class="reveal reveal-up reveal-delay-1" style="opacity:0.85;font-size:var(--font-size-md);margin-bottom:var(--space-xl);">Hubungi admin kami via WhatsApp. Layanan tersedia setiap hari pukul 07.00–23.00 WIB, termasuk hari libur.</p>
-        <a href="https://wa.me/6288222267334?text=Halo%20KADENA%2C%20saya%20ingin%20cairkan%20limit%20paylater%2Fkartu%20kredit%20saya." class="btn btn--wa btn--lg reveal reveal-scale reveal-delay-2" target="_blank" rel="noopener" onclick="trackWAClick('sk_final_cta')">
+      <div class="container" style="text-align:center; max-width:640px; margin:0 auto;">
+        <h2 class="reveal reveal-up" style="font-size:var(--font-size-2xl); margin-bottom:var(--space-md);">
+          Siap Cairkan Limit Anda?
+        </h2>
+        <p class="reveal reveal-up reveal-delay-1" style="opacity:0.85; font-size:var(--font-size-md); margin-bottom:var(--space-xl);">
+          Hubungi kami sekarang. Proses cepat, fee transparan, dan tidak ada biaya tersembunyi.
+        </p>
+        <a href="https://wa.me/6288222267334?text=Halo%20KADENA%2C%20saya%20ingin%20cairkan%20limit%20paylater%2Fkartu%20kredit%20saya." class="btn btn--wa btn--lg reveal reveal-scale reveal-delay-2" target="_blank" rel="noopener" onclick="trackWAClick('harga_final_cta')">
           <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-          Cairkan Sekarang via WhatsApp
+          Hubungi via WhatsApp Sekarang
         </a>
       </div>
     </section>
+
   </main>
 
-  <!-- FOOTER -->
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <img src="assets/logos/logo-kadena-gestun.png" alt="KADENA Gestun" width="140" height="36" style="filter:brightness(0) invert(1);opacity:0.9;">
+          <img src="assets/logos/logo-kadena-gestun.png" alt="KADENA Gestun" width="140" height="36" style="filter:brightness(0) invert(1); opacity:0.9;">
           <p>Jasa pencairan limit paylater & kartu kredit terpercaya sejak 2021. Melayani online seluruh Indonesia dan COD di Jaksel, Depok & Bogor.</p>
         </div>
         <div>
           <h4 class="footer__heading">Menu</h4>
           <a href="index.html" class="footer__link">Beranda</a>
-          <a href="cara-kerja.html" class="footer__link">Cara Kerja</a>
           <a href="harga.html" class="footer__link">Harga & Kalkulator</a>
           <a href="faq.html" class="footer__link">FAQ</a>
-          <a href="anti-penipuan.html" class="footer__link">Anti-Penipuan</a>
+          <a href="cod.html" class="footer__link">COD</a>
+          <a href="testimoni.html" class="footer__link">Testimoni</a>
           <a href="blog/index.html" class="footer__link">Blog</a>
         </div>
         <div>
           <h4 class="footer__heading">Layanan</h4>
           <a href="cod.html" class="footer__link">Ketentuan COD</a>
           <a href="syarat-ketentuan.html" class="footer__link">Syarat & Ketentuan</a>
-          <a href="https://drive.google.com/drive/u/0/folders/1-uJO_IwyA4Dl5VLuUWt_wg8uNm8Xy7-Q" class="footer__link" target="_blank" rel="noopener">Bukti Transaksi</a>
+          <a href="testimoni.html" class="footer__link">Testimoni & Bukti Transaksi</a>
         </div>
         <div>
           <h4 class="footer__heading">Kontak</h4>
           <a href="https://wa.me/6288222267334" class="footer__link" target="_blank" rel="noopener">📱 0882-222-67334 (WA)</a>
-          <a href="https://instagram.com/kadenagestun_" class="footer__link" target="_blank" rel="noopener">📸 @kadenagestun_</a>
+          <a href="https://instagram.com/gestun.kadena" class="footer__link" target="_blank" rel="noopener">📸 @gestun.kadena</a>
           <span class="footer__link">🕐 07.00–23.00 WIB (Setiap Hari)</span>
         </div>
       </div>
@@ -204,87 +295,64 @@
     </div>
   </footer>
 
-  <!-- FLOATING WA -->
+
+  <!-- ============================================
+       FLOATING WHATSAPP BUTTON
+       ============================================ -->
   <a href="https://wa.me/6288222267334?text=Halo%20KADENA%2C%20saya%20ingin%20cairkan%20limit%20paylater%2Fkartu%20kredit%20saya." class="wa-float" target="_blank" rel="noopener" aria-label="Hubungi via WhatsApp" onclick="trackWAClick('floating')">
     <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
   </a>
 
-  <!-- SCRIPTS -->
+
+  <!-- ============================================
+       SCRIPTS
+       ============================================ -->
+  <script src="js/calculator.js"></script>
   <script>
+    // === GA4 WhatsApp Click Tracker ===
     function trackWAClick(buttonType, provider) {
       if (typeof gtag === 'function') {
-        gtag('event', 'whatsapp_click', { button_type: buttonType, provider: provider || '' });
+        gtag('event', 'whatsapp_click', {
+          button_type: buttonType,
+          provider: provider || ''
+        });
       }
     }
 
-    // Load S&K from JSON
-    (function() {
-      fetch('sk-config.json')
-        .then(function(res) { return res.json(); })
-        .then(function(data) {
-          var container = document.getElementById('sk-list');
-          var terms = data.terms;
-          var html = '';
-
-          terms.forEach(function(term, i) {
-            html += '<div class="sk-item reveal reveal-up" style="animation-delay:' + (i * 0.05) + 's;">';
-            html += '<div class="sk-number">' + (i + 1) + '</div>';
-            html += '<div class="sk-content">';
-            if (term.title) html += '<h4 style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin-bottom:6px;">' + term.title + '</h4>';
-            html += '<p class="sk-text">' + term.text;
-            if (term.reference_path) {
-              var refHref = term.reference_path.replace('/', '') + '.html';
-              html += ' <a href="' + refHref + '">Selengkapnya \u2192</a>';
-            }
-            html += '</p></div></div>';
-          });
-
-          container.innerHTML = html;
-
-          // Excluded providers
-          if (data.excluded_providers && data.excluded_providers.length > 0) {
-            var warningBox = document.getElementById('warning-box');
-            var excludedList = document.getElementById('excluded-list');
-            var eHTML = '';
-            data.excluded_providers.forEach(function(p) {
-              eHTML += '<li>\u2718 ' + p + '</li>';
-            });
-            excludedList.innerHTML = eHTML;
-            warningBox.style.display = 'block';
-          }
-
-          // Re-observe reveals
-          document.querySelectorAll('.reveal:not(.visible)').forEach(function(el) { revealObserver.observe(el); });
-        })
-        .catch(function(err) {
-          console.error('Error loading S&K:', err);
-          document.getElementById('sk-list').innerHTML = '<p style="text-align:center;color:#dc2626;">Gagal memuat data S&K. Silakan refresh halaman.</p>';
-        });
-    })();
-
-    // Scroll Reveal
+    // === Scroll Reveal (IntersectionObserver) ===
     var revealElements = document.querySelectorAll('.reveal');
-    var revealObserver = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); }
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
       });
     }, { threshold: 0.15 });
-    revealElements.forEach(function(el) { revealObserver.observe(el); });
+    revealElements.forEach(function (el) { revealObserver.observe(el); });
 
-    // Navbar
+    // === Navbar Scroll Shadow ===
     var navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', function() { navbar.classList.toggle('scrolled', window.scrollY > 10); });
+    window.addEventListener('scroll', function () {
+      navbar.classList.toggle('scrolled', window.scrollY > 10);
+    });
+
+    // === Mobile Menu Toggle ===
     var navToggle = document.getElementById('navToggle');
     var navMobile = document.getElementById('navMobile');
-    navToggle.addEventListener('click', function() {
-      navToggle.classList.toggle('open'); navMobile.classList.toggle('open');
+    navToggle.addEventListener('click', function () {
+      navToggle.classList.toggle('open');
+      navMobile.classList.toggle('open');
       document.body.style.overflow = navMobile.classList.contains('open') ? 'hidden' : '';
     });
-    navMobile.querySelectorAll('a').forEach(function(link) {
-      link.addEventListener('click', function() {
-        navToggle.classList.remove('open'); navMobile.classList.remove('open'); document.body.style.overflow = '';
+    navMobile.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navToggle.classList.remove('open');
+        navMobile.classList.remove('open');
+        document.body.style.overflow = '';
       });
     });
   </script>
+
 </body>
 </html>
