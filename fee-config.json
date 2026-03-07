@@ -13,7 +13,7 @@
         {
           "provider_id": "shopee-paylater",
           "provider_name": "Shopee Paylater",
-          "icon": "shopee-paylater.webp",
+          "icon": "shopee-paylater.png",
           "services": [
             {
               "service_id": "shopee-paylater-qris",
@@ -36,7 +36,7 @@
         {
           "provider_id": "kredivo",
           "provider_name": "Kredivo",
-          "icon": "kredivo.webp",
+          "icon": "kredivo.png",
           "services": [
             {
               "service_id": "kredivo-va",
@@ -75,7 +75,7 @@
         {
           "provider_id": "atome",
           "provider_name": "Atome",
-          "icon": "atome.webp",
+          "icon": "atome.png",
           "services": [
             {
               "service_id": "atome-va",
@@ -90,7 +90,7 @@
         {
           "provider_id": "tiktok-paylater",
           "provider_name": "TikTok Paylater",
-          "icon": "tiktok-paylater.webp",
+          "icon": "tiktok-paylater.png",
           "services": [
             {
               "service_id": "tiktok-paylater-tokopedia",
@@ -105,7 +105,7 @@
         {
           "provider_id": "gopaylater",
           "provider_name": "GoPaylater",
-          "icon": "gopaylater.webp",
+          "icon": "gopaylater.png",
           "services": [
             {
               "service_id": "gopaylater-tagihan",
@@ -120,7 +120,7 @@
         {
           "provider_id": "blibli-paylater",
           "provider_name": "Blibli Paylater",
-          "icon": "blibli-paylater.webp",
+          "icon": "blibli-paylater.png",
           "services": [
             {
               "service_id": "blibli-paylater-tagihan",
@@ -135,7 +135,7 @@
         {
           "provider_id": "bca-paylater",
           "provider_name": "BCA Paylater",
-          "icon": "bca-paylater.webp",
+          "icon": "bca-paylater.png",
           "services": [
             {
               "service_id": "bca-paylater-qris",
@@ -150,7 +150,7 @@
         {
           "provider_id": "livin-mandiri-paylater",
           "provider_name": "Livin Mandiri Paylater",
-          "icon": "livin-mandiri-paylater.webp",
+          "icon": "livin-mandiri-paylater.png",
           "services": [
             {
               "service_id": "livin-mandiri-paylater-qris",
@@ -165,7 +165,7 @@
         {
           "provider_id": "jenius-paylater",
           "provider_name": "Jenius Paylater",
-          "icon": "jenius-paylater.webp",
+          "icon": "jenius-paylater.png",
           "services": [
             {
               "service_id": "jenius-paylater-qris",
@@ -180,7 +180,7 @@
         {
           "provider_id": "dana-paylater",
           "provider_name": "DANA Paylater / DANA Cicil",
-          "icon": "dana-paylater.webp",
+          "icon": "dana-paylater.png",
           "services": [
             {
               "service_id": "dana-paylater-qris",
@@ -195,7 +195,7 @@
         {
           "provider_id": "allo-bank-paylater",
           "provider_name": "Allo Bank Paylater",
-          "icon": "allo-bank-paylater.webp",
+          "icon": "allo-bank-paylater.png",
           "services": [
             {
               "service_id": "allo-bank-paylater-qris",
@@ -210,7 +210,7 @@
         {
           "provider_id": "yup-paylater",
           "provider_name": "YUP Paylater",
-          "icon": "yup-paylater.webp",
+          "icon": "yup-paylater.png",
           "services": [
             {
               "service_id": "yup-paylater-qris",
@@ -239,7 +239,7 @@
         {
           "provider_id": "indodana",
           "provider_name": "Indodana",
-          "icon": "indodana.webp",
+          "icon": "indodana.png",
           "services": [
             {
               "service_id": "indodana-va",
@@ -262,7 +262,7 @@
         {
           "provider_id": "akulaku",
           "provider_name": "Akulaku",
-          "icon": "akulaku.webp",
+          "icon": "akulaku.png",
           "services": [
             {
               "service_id": "akulaku-tagihan",
@@ -277,7 +277,7 @@
         {
           "provider_id": "flip-cicilan-instan",
           "provider_name": "Flip Cicilan Instan",
-          "icon": "flip-cicilan-instan.webp",
+          "icon": "flip-cicilan-instan.png",
           "services": [
             {
               "service_id": "flip-cicilan-instan-va",
@@ -292,7 +292,7 @@
         {
           "provider_id": "bri-ceria",
           "provider_name": "BRI Ceria",
-          "icon": "bri-ceria.webp",
+          "icon": "bri-ceria.png",
           "services": [
             {
               "service_id": "bri-ceria-tokopedia",
@@ -307,7 +307,7 @@
         {
           "provider_id": "credinex",
           "provider_name": "Credinex",
-          "icon": "credinex.webp",
+          "icon": "credinex.png",
           "services": [
             {
               "service_id": "credinex-qris",
@@ -336,7 +336,7 @@
         {
           "provider_id": "kartu-kredit-semua",
           "provider_name": "Kartu Kredit (Semua Jenis)",
-          "icon": "kartu-kredit.webp",
+          "icon": "kartu-kredit.png",
           "services": [
             {
               "service_id": "kartu-kredit-qris-dana",
