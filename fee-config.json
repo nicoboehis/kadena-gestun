@@ -1,0 +1,384 @@
+{
+  "_metadata": {
+    "version": "1.0.0",
+    "last_updated": "2026-03-06",
+    "update_frequency": "Minimal setiap 2 minggu",
+    "description": "Data fee, provider, metode transaksi, dan durasi pencairan untuk website KADENA Gestun"
+  },
+  "categories": [
+    {
+      "category_id": "paylater",
+      "category_name": "Paylater",
+      "providers": [
+        {
+          "provider_id": "shopee-paylater",
+          "provider_name": "Shopee Paylater",
+          "icon": "shopee-paylater.png",
+          "services": [
+            {
+              "service_id": "shopee-paylater-qris",
+              "transaction_type": "Scan QRIS",
+              "method": "qris",
+              "fee_percent": 10,
+              "processing_time": "5 menit",
+              "processing_time_minutes": 5
+            },
+            {
+              "service_id": "shopee-paylater-tagihan",
+              "transaction_type": "Pembayaran Tagihan / Token PLN",
+              "method": "bill_payment",
+              "fee_percent": 16,
+              "processing_time": "30 menit",
+              "processing_time_minutes": 30
+            }
+          ]
+        },
+        {
+          "provider_id": "kredivo",
+          "provider_name": "Kredivo",
+          "icon": "kredivo.png",
+          "services": [
+            {
+              "service_id": "kredivo-va",
+              "transaction_type": "Virtual Account Tanpa Check-Out Produk",
+              "method": "virtual_account",
+              "fee_percent": 7,
+              "processing_time": "5 menit",
+              "processing_time_minutes": 5
+            },
+            {
+              "service_id": "kredivo-shopee",
+              "transaction_type": "Check-out di Shopee",
+              "method": "marketplace_checkout",
+              "fee_percent": 6,
+              "processing_time": "H+1 (1 hari)",
+              "processing_time_minutes": 1440
+            },
+            {
+              "service_id": "kredivo-tokopedia",
+              "transaction_type": "Check-out di Tokopedia",
+              "method": "marketplace_checkout",
+              "fee_percent": 6,
+              "processing_time": "6 jam",
+              "processing_time_minutes": 360
+            },
+            {
+              "service_id": "kredivo-tagihan",
+              "transaction_type": "Pembayaran Tagihan / Token PLN",
+              "method": "bill_payment",
+              "fee_percent": 16,
+              "processing_time": "30 menit",
+              "processing_time_minutes": 30
+            }
+          ]
+        },
+        {
+          "provider_id": "atome",
+          "provider_name": "Atome",
+          "icon": "atome.png",
+          "services": [
+            {
+              "service_id": "atome-va",
+              "transaction_type": "Virtual Account Tanpa Check-Out",
+              "method": "virtual_account",
+              "fee_percent": 7,
+              "processing_time": "5 menit",
+              "processing_time_minutes": 5
+            }
+          ]
+        },
+        {
+          "provider_id": "tiktok-paylater",
+          "provider_name": "TikTok Paylater",
+          "icon": "tiktok-paylater.png",
+          "services": [
+            {
+              "service_id": "tiktok-paylater-tokopedia",
+              "transaction_type": "Check-out di Tokopedia",
+              "method": "marketplace_checkout",
+              "fee_percent": 15,
+              "processing_time": "H+2 (2 hari)",
+              "processing_time_minutes": 2880
+            }
+          ]
+        },
+        {
+          "provider_id": "gopaylater",
+          "provider_name": "GoPaylater",
+          "icon": "gopaylater.png",
+          "services": [
+            {
+              "service_id": "gopaylater-tagihan",
+              "transaction_type": "Pembayaran Tagihan / Token PLN",
+              "method": "bill_payment",
+              "fee_percent": 16,
+              "processing_time": "30 menit",
+              "processing_time_minutes": 30
+            }
+          ]
+        },
+        {
+          "provider_id": "blibli-paylater",
+          "provider_name": "Blibli Paylater",
+          "icon": "blibli-paylater.png",
+          "services": [
+            {
+              "service_id": "blibli-paylater-tagihan",
+              "transaction_type": "Pembayaran Tagihan / Token PLN",
+              "method": "bill_payment",
+              "fee_percent": 16,
+              "processing_time": "30 menit",
+              "processing_time_minutes": 30
+            }
+          ]
+        },
+        {
+          "provider_id": "bca-paylater",
+          "provider_name": "BCA Paylater",
+          "icon": "bca-paylater.png",
+          "services": [
+            {
+              "service_id": "bca-paylater-qris",
+              "transaction_type": "Scan QRIS",
+              "method": "qris",
+              "fee_percent": 6,
+              "processing_time": "5 menit",
+              "processing_time_minutes": 5
+            }
+          ]
+        },
+        {
+          "provider_id": "livin-mandiri-paylater",
+          "provider_name": "Livin Mandiri Paylater",
+          "icon": "livin-mandiri-paylater.png",
+          "services": [
+            {
+              "service_id": "livin-mandiri-paylater-qris",
+              "transaction_type": "Scan QRIS",
+              "method": "qris",
+              "fee_percent": 6,
+              "processing_time": "5 menit",
+              "processing_time_minutes": 5
+            }
+          ]
+        },
+        {
+          "provider_id": "jenius-paylater",
+          "provider_name": "Jenius Paylater",
+          "icon": "jenius-paylater.png",
+          "services": [
+            {
+              "service_id": "jenius-paylater-qris",
+              "transaction_type": "Scan QRIS",
+              "method": "qris",
+              "fee_percent": 6,
+              "processing_time": "5 menit",
+              "processing_time_minutes": 5
+            }
+          ]
+        },
+        {
+          "provider_id": "dana-paylater",
+          "provider_name": "DANA Paylater / DANA Cicil",
+          "icon": "dana-paylater.png",
+          "services": [
+            {
+              "service_id": "dana-paylater-qris",
+              "transaction_type": "Scan QRIS",
+              "method": "qris",
+              "fee_percent": 6,
+              "processing_time": "4 menit",
+              "processing_time_minutes": 4
+            }
+          ]
+        },
+        {
+          "provider_id": "allo-bank-paylater",
+          "provider_name": "Allo Bank Paylater",
+          "icon": "allo-bank-paylater.png",
+          "services": [
+            {
+              "service_id": "allo-bank-paylater-qris",
+              "transaction_type": "Scan QRIS",
+              "method": "qris",
+              "fee_percent": 6,
+              "processing_time": "5 menit",
+              "processing_time_minutes": 5
+            }
+          ]
+        },
+        {
+          "provider_id": "yup-paylater",
+          "provider_name": "YUP Paylater",
+          "icon": "yup-paylater.png",
+          "services": [
+            {
+              "service_id": "yup-paylater-qris",
+              "transaction_type": "Scan QRIS",
+              "method": "qris",
+              "fee_percent": 6,
+              "processing_time": "5 menit",
+              "processing_time_minutes": 5
+            },
+            {
+              "service_id": "yup-paylater-va",
+              "transaction_type": "Virtual Account (Tanpa Check-Out)",
+              "method": "virtual_account",
+              "fee_percent": 6,
+              "processing_time": "5 menit",
+              "processing_time_minutes": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "pinjaman-online",
+      "category_name": "Pinjaman Online / Cicilan",
+      "providers": [
+        {
+          "provider_id": "indodana",
+          "provider_name": "Indodana",
+          "icon": "indodana.png",
+          "services": [
+            {
+              "service_id": "indodana-va",
+              "transaction_type": "Virtual Account Tanpa Check-Out",
+              "method": "virtual_account",
+              "fee_percent": 7,
+              "processing_time": "5 menit",
+              "processing_time_minutes": 5
+            },
+            {
+              "service_id": "indodana-tagihan",
+              "transaction_type": "Pembayaran Tagihan / Token PLN",
+              "method": "bill_payment",
+              "fee_percent": 16,
+              "processing_time": "30 menit",
+              "processing_time_minutes": 30
+            }
+          ]
+        },
+        {
+          "provider_id": "akulaku",
+          "provider_name": "Akulaku",
+          "icon": "akulaku.png",
+          "services": [
+            {
+              "service_id": "akulaku-tagihan",
+              "transaction_type": "Pembayaran Tagihan / Token PLN",
+              "method": "bill_payment",
+              "fee_percent": 16,
+              "processing_time": "30 menit",
+              "processing_time_minutes": 30
+            }
+          ]
+        },
+        {
+          "provider_id": "flip-cicilan-instan",
+          "provider_name": "Flip Cicilan Instan",
+          "icon": "flip-cicilan-instan.png",
+          "services": [
+            {
+              "service_id": "flip-cicilan-instan-va",
+              "transaction_type": "Virtual Account Tanpa Check-Out",
+              "method": "virtual_account",
+              "fee_percent": 7,
+              "processing_time": "5 menit",
+              "processing_time_minutes": 5
+            }
+          ]
+        },
+        {
+          "provider_id": "bri-ceria",
+          "provider_name": "BRI Ceria",
+          "icon": "bri-ceria.png",
+          "services": [
+            {
+              "service_id": "bri-ceria-tokopedia",
+              "transaction_type": "Check-out di Tokopedia",
+              "method": "marketplace_checkout",
+              "fee_percent": 15,
+              "processing_time": "H+2 (2 hari)",
+              "processing_time_minutes": 2880
+            }
+          ]
+        },
+        {
+          "provider_id": "credinex",
+          "provider_name": "Credinex",
+          "icon": "credinex.png",
+          "services": [
+            {
+              "service_id": "credinex-qris",
+              "transaction_type": "Scan QRIS",
+              "method": "qris",
+              "fee_percent": 6,
+              "processing_time": "5 menit",
+              "processing_time_minutes": 5
+            },
+            {
+              "service_id": "credinex-va",
+              "transaction_type": "Virtual Account (Tanpa Check-Out)",
+              "method": "virtual_account",
+              "fee_percent": 6,
+              "processing_time": "5 menit",
+              "processing_time_minutes": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category_id": "kartu-kredit",
+      "category_name": "Kartu Kredit",
+      "providers": [
+        {
+          "provider_id": "kartu-kredit-semua",
+          "provider_name": "Kartu Kredit (Semua Jenis)",
+          "icon": "kartu-kredit.png",
+          "services": [
+            {
+              "service_id": "kartu-kredit-qris-dana",
+              "transaction_type": "QRIS di Aplikasi DANA",
+              "method": "qris",
+              "fee_percent": 5,
+              "processing_time": "5 menit",
+              "processing_time_minutes": 5
+            },
+            {
+              "service_id": "kartu-kredit-einvoicing",
+              "transaction_type": "E-Invoicing (Paper.id)",
+              "method": "e_invoicing",
+              "fee_percent": 5,
+              "processing_time": "6 jam",
+              "processing_time_minutes": 360
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transaction_methods": {
+    "qris": {
+      "label": "Scan QRIS",
+      "description": "Transaksi melalui scan kode QRIS"
+    },
+    "virtual_account": {
+      "label": "Virtual Account",
+      "description": "Transaksi melalui Virtual Account tanpa checkout produk"
+    },
+    "marketplace_checkout": {
+      "label": "Checkout Marketplace",
+      "description": "Transaksi melalui checkout di marketplace (Shopee/Tokopedia)"
+    },
+    "bill_payment": {
+      "label": "Pembayaran Tagihan / Token PLN",
+      "description": "Transaksi melalui pembayaran tagihan atau pembelian token PLN"
+    },
+    "e_invoicing": {
+      "label": "E-Invoicing",
+      "description": "Transaksi melalui platform e-invoicing (Paper.id)"
+    }
+  }
+}
