@@ -136,7 +136,7 @@
     <div class="container navbar__inner">
       <!-- Logo -->
       <a href="index.html" class="navbar__logo">
-        <img src="assets/logos/logo-kadena-gestun.png" alt="KADENA Gestun Logo" width="140" height="36">
+        <img src="assets/logos/logo-kadena-gestun.png" alt="KADENA Gestun Logo" width="180" height="48">
       </a>
 
       <!-- Desktop Menu -->
@@ -468,7 +468,7 @@
       <div class="footer__grid">
         <!-- Brand -->
         <div class="footer__brand">
-          <img src="assets/logos/logo-kadena-gestun.png" alt="KADENA Gestun" width="140" height="36" style="filter:brightness(0) invert(1); opacity:0.9;">
+          <img src="assets/logos/logo-kadena-gestun.png" alt="KADENA Gestun" width="180" height="48" style="filter:brightness(0) invert(1); opacity:0.9;">
           <p>Jasa pencairan limit paylater & kartu kredit terpercaya sejak 2021. Melayani online seluruh Indonesia dan COD di Jaksel, Depok & Bogor.</p>
         </div>
 
@@ -551,23 +551,32 @@
       navbar.classList.toggle('scrolled', window.scrollY > 10);
     });
 
-    // === Mobile Menu Toggle ===
-    const navToggle = document.getElementById('navToggle');
-    const navMobile = document.getElementById('navMobile');
-    navToggle.addEventListener('click', () => {
-      navToggle.classList.toggle('open');
-      navMobile.classList.toggle('open');
-      document.body.style.overflow = navMobile.classList.contains('open') ? 'hidden' : '';
-    });
+    // === Mobile Menu Toggle (inline-style approach) ===
+const navToggle = document.getElementById('navToggle');
+const navMobile = document.getElementById('navMobile');
+let menuOpen = false;
+navToggle.addEventListener('click', function() {
+  menuOpen = !menuOpen;
+  if (menuOpen) {
+    navMobile.style.setProperty('display', 'flex', 'important');
+    navToggle.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  } else {
+    navMobile.style.setProperty('display', 'none', 'important');
+    navToggle.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+});
 
-    // Close mobile menu when a link is clicked
-    navMobile.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navToggle.classList.remove('open');
-        navMobile.classList.remove('open');
-        document.body.style.overflow = '';
-      });
-    });
+// Close mobile menu when a link is clicked
+navMobile.querySelectorAll('a').forEach(function(link) {
+  link.addEventListener('click', function() {
+    menuOpen = false;
+    navMobile.style.setProperty('display', 'none', 'important');
+    navToggle.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
   </script>
 
 </body>
