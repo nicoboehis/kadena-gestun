@@ -72,6 +72,14 @@
     .calc-net-amount { display: block; font-size: var(--font-size-2xl); font-weight: 800; color: var(--primary); }
     .calc-result-details { display: flex; flex-direction: column; gap: var(--space-xs); font-size: var(--font-size-sm); color: var(--text-secondary); margin-bottom: var(--space-md); }
     .calc-disclaimer { font-size: 0.75rem; color: var(--text-tertiary); font-style: italic; margin-top: var(--space-sm); margin-bottom: 0; }
+    /* Provider Chips (menggantikan logo image agar selalu tampil) */
+    .provider-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+    .provider-chip { display: inline-flex; align-items: center; gap: 6px; padding: 8px 18px; background: var(--bg-white); border: 1.5px solid var(--border); border-radius: var(--radius-full); font-size: var(--font-size-sm); font-weight: 600; color: var(--text-primary); white-space: nowrap; transition: all var(--transition-base); }
+    .provider-chip:hover { border-color: var(--primary); box-shadow: var(--shadow); transform: translateY(-2px); }
+    .provider-chip .chip-icon { font-size: 1.1rem; }
+    /* Hero Image */
+    .hero__image { margin-top: var(--space-2xl); }
+    .hero__image img { width: 100%; max-width: 600px; margin: 0 auto; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
   </style>
 
   <!-- Google Analytics (GA4) — UNCOMMENT & GANTI ID setelah punya -->
@@ -229,6 +237,10 @@
             <div class="hero__stat-label">Pelanggan Loyal</div>
           </div>
         </div>
+        <!-- Hero Image -->
+        <div class="hero__image reveal reveal-up">
+          <img src="assets/images/hero-kadena.png" alt="KADENA Gestun — Jasa Pencairan Limit Paylater dan Kartu Kredit Terpercaya" onerror="this.parentElement.style.display='none'">
+        </div>
       </div>
     </section>
 
@@ -239,15 +251,16 @@
     <section class="providers">
       <div class="container">
         <p class="providers__title">Melayani Pencairan Limit Dari</p>
-        <div class="providers__grid">
-          <!-- TODO: Sesuaikan src dengan nama file yang ada di repo -->
-          <img src="assets/logos/shopee-paylater.png" alt="Shopee PayLater" class="providers__logo" width="120" height="32" loading="lazy">
-          <img src="assets/logos/kredivo.png" alt="Kredivo" class="providers__logo" width="120" height="32" loading="lazy">
-          <img src="assets/logos/akulaku.png" alt="Akulaku" class="providers__logo" width="120" height="32" loading="lazy">
-          <img src="assets/logos/gopaylater.png" alt="GoPay Later" class="providers__logo" width="120" height="32" loading="lazy">
-          <img src="assets/logos/dana.png" alt="DANA" class="providers__logo" width="120" height="32" loading="lazy">
-          <img src="assets/logos/visa.png" alt="Visa" class="providers__logo" width="120" height="32" loading="lazy">
-          <img src="assets/logos/mastercard.png" alt="Mastercard" class="providers__logo" width="120" height="32" loading="lazy">
+        <div class="provider-chips">
+          <span class="provider-chip"><span class="chip-icon">🛒</span> Shopee PayLater</span>
+          <span class="provider-chip"><span class="chip-icon">💳</span> Kredivo</span>
+          <span class="provider-chip"><span class="chip-icon">🛍️</span> Akulaku</span>
+          <span class="provider-chip"><span class="chip-icon">💳</span> GoPay Later</span>
+          <span class="provider-chip"><span class="chip-icon">💳</span> DANA</span>
+          <span class="provider-chip"><span class="chip-icon">💳</span> Indodana</span>
+          <span class="provider-chip"><span class="chip-icon">⚡</span> Atome</span>
+          <span class="provider-chip"><span class="chip-icon">💳</span> Visa</span>
+          <span class="provider-chip"><span class="chip-icon">💳</span> Mastercard</span>
         </div>
       </div>
     </section>
