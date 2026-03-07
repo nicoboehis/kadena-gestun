@@ -126,6 +126,9 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 body {
@@ -136,6 +139,8 @@ body {
   color: var(--text-primary);
   background-color: var(--bg-white);
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 img,
@@ -1410,4 +1415,21 @@ body {
   :root {
     --container-padding: 2.5rem;
   }
+}
+/* ============================================================
+   PATCH: Mobile Hamburger Menu Fix
+   Replaces transform-based toggle with display-based toggle.
+   Some Android WebView / mobile Chrome builds don't properly
+   render transform on fixed-position elements that sit under
+   a backdrop-filter parent (the navbar).
+   ============================================================ */
+.navbar__mobile {
+  transform: none !important;
+  display: none !important;
+}
+
+.navbar__mobile.open {
+  display: flex !important;
+  flex-direction: column;
+  transform: none !important;
 }
