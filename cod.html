@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO -->
-  <title>Ketentuan COD / Offline — Gestun Tatap Muka Jaksel, Depok & Bogor | KADENA</title>
-  <meta name="description" content="Layanan gestun COD (Cash on Delivery) tatap muka di Jakarta Selatan, Depok, dan Bogor. Lihat area layanan, provider yang diterima, dan minimum transaksi.">
-  <meta name="keywords" content="gestun COD, gestun tatap muka, gestun jakarta selatan, gestun depok, gestun bogor, jasa gestun COD terdekat, gestun offline">
+  <title>FAQ — Pertanyaan Seputar Gestun Paylater & Kartu Kredit | KADENA</title>
+  <meta name="description" content="Temukan jawaban untuk pertanyaan yang sering ditanyakan seputar jasa gestun paylater dan kartu kredit di KADENA. Cara transaksi, biaya fee, keamanan, dan lainnya.">
+  <meta name="keywords" content="faq gestun, pertanyaan gestun paylater, cara transaksi gestun, biaya fee gestun, keamanan gestun, gestun online terpercaya">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://kadenagestun.my.id/cod.html">
+  <link rel="canonical" href="https://kadenagestun.my.id/faq.html">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Ketentuan COD / Offline — Gestun Tatap Muka | KADENA">
-  <meta property="og:description" content="Layanan gestun COD tatap muka di Jaksel, Depok & Bogor. Lihat area, provider, dan minimum transaksi.">
-  <meta property="og:url" content="https://kadenagestun.my.id/cod.html">
+  <meta property="og:title" content="FAQ — Pertanyaan Seputar Gestun | KADENA">
+  <meta property="og:description" content="Temukan jawaban untuk pertanyaan yang sering ditanyakan seputar jasa gestun paylater dan kartu kredit di KADENA.">
+  <meta property="og:url" content="https://kadenagestun.my.id/faq.html">
   <meta property="og:image" content="https://kadenagestun.my.id/assets/images/og-image.png">
   <meta property="og:site_name" content="KADENA Gestun">
   <meta property="og:locale" content="id_ID">
@@ -33,45 +33,30 @@
 
   <!-- Page-specific styles -->
   <style>
-    .breadcrumb{padding:var(--space-sm) 0;font-size:var(--font-size-sm);color:var(--text-tertiary)}
-    .breadcrumb a{color:var(--primary);text-decoration:none}
-    .breadcrumb a:hover{text-decoration:underline}
-    .breadcrumb span{margin:0 var(--space-xs)}
+    .breadcrumb { padding: var(--space-sm) 0; font-size: var(--font-size-sm); color: var(--text-tertiary); }
+    .breadcrumb a { color: var(--primary); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 var(--space-xs); }
 
-    /* Area Cards */
-    .area-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-lg);margin-top:var(--space-lg)}
-    .area-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:var(--space-xl);text-align:center;transition:transform 0.2s,box-shadow 0.2s}
-    .area-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,0.08)}
-    .area-card__icon{font-size:3rem;margin-bottom:var(--space-md)}
-    .area-card__name{font-size:var(--font-size-xl);font-weight:700;color:var(--text-primary);margin-bottom:var(--space-xs)}
-    .area-card__desc{font-size:var(--font-size-sm);color:var(--text-secondary);line-height:1.6}
+    .faq-list { max-width: 800px; margin: 0 auto; }
+    .faq-item { border: 1px solid var(--border); border-radius: var(--radius-md); margin-bottom: var(--space-sm); overflow: hidden; transition: border-color 0.2s; }
+    .faq-item:hover { border-color: var(--primary); }
+    .faq-item.open { border-color: var(--primary); }
+    .faq-question { display: flex; justify-content: space-between; align-items: center; padding: var(--space-md) var(--space-lg); cursor: pointer; background: var(--bg-card); font-weight: 600; color: var(--text-primary); font-size: var(--font-size-base); gap: var(--space-md); transition: background 0.2s; user-select: none; }
+    .faq-question:hover { background: var(--bg-secondary); }
+    .faq-question-text { flex: 1; }
+    .faq-icon { width: 24px; height: 24px; flex-shrink: 0; transition: transform 0.3s; color: var(--primary); }
+    .faq-item.open .faq-icon { transform: rotate(180deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+    .faq-answer-inner { padding: 0 var(--space-lg) var(--space-lg); color: var(--text-secondary); font-size: var(--font-size-sm); line-height: 1.7; }
+    .faq-answer-inner a { color: var(--primary); text-decoration: none; font-weight: 600; }
+    .faq-answer-inner a:hover { text-decoration: underline; }
+    .faq-ref { display: inline-block; margin-top: var(--space-sm); font-weight: 600; }
 
-    /* Provider Table */
-    .table-wrap{overflow-x:auto;margin-top:var(--space-lg);border-radius:var(--radius-lg);border:1px solid var(--border)}
-    .provider-table{width:100%;border-collapse:collapse;font-size:var(--font-size-sm)}
-    .provider-table thead{background:var(--primary);color:var(--text-inverse)}
-    .provider-table th{padding:var(--space-md) var(--space-lg);text-align:left;font-weight:600;white-space:nowrap}
-    .provider-table td{padding:var(--space-md) var(--space-lg);border-bottom:1px solid var(--border);color:var(--text-secondary)}
-    .provider-table tbody tr:hover{background:var(--bg-secondary)}
-    .provider-table tbody tr:last-child td{border-bottom:none}
-    .method-badge{display:inline-block;padding:2px 10px;border-radius:var(--radius-sm);font-size:var(--font-size-xs);font-weight:600;background:rgba(11,188,214,0.1);color:var(--primary)}
+    .cta-gradient { background: linear-gradient(135deg, var(--primary), var(--primary-dark)); }
+    .cta-gradient h2, .cta-gradient p { color: var(--text-inverse); }
 
-    /* Meeting Locations */
-    .meeting-list{list-style:none;padding:0;margin-top:var(--space-md)}
-    .meeting-list li{display:flex;align-items:flex-start;gap:var(--space-sm);padding:var(--space-sm) 0;color:var(--text-secondary);font-size:var(--font-size-sm);line-height:1.6}
-    .meeting-list li::before{content:'📍';flex-shrink:0;font-size:1.1rem}
-
-    /* Schedule & Info */
-    .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:var(--space-lg);margin-top:var(--space-lg)}
-    .info-box{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:var(--space-lg);text-align:center}
-    .info-box__icon{font-size:2rem;margin-bottom:var(--space-sm)}
-    .info-box__title{font-weight:700;color:var(--text-primary);margin-bottom:var(--space-xs)}
-    .info-box__desc{font-size:var(--font-size-sm);color:var(--text-secondary)}
-
-    .cta-gradient{background:linear-gradient(135deg,var(--primary),var(--primary-dark))}
-    .cta-gradient h2,.cta-gradient p{color:var(--text-inverse)}
-
-    .no-fee-badge{display:inline-block;margin-top:var(--space-md);padding:var(--space-sm) var(--space-lg);background:rgba(37,211,102,0.1);border:1px solid rgba(37,211,102,0.3);border-radius:var(--radius-md);color:#25D366;font-weight:700;font-size:var(--font-size-sm)}
+    .testimoni-cta { max-width: 800px; margin: var(--space-xl) auto 0; padding: var(--space-lg); background: rgba(232,75,138,0.06); border: 1px solid rgba(232,75,138,0.2); border-radius: var(--radius-lg); text-align: center; }
   </style>
 
   <!-- GA4 placeholder -->
@@ -84,6 +69,9 @@
     gtag('config', 'G-XXXXXXXXXX');
   </script>
   -->
+
+  <!-- FAQ Schema (injected by JS) -->
+  <script id="faq-schema" type="application/ld+json"></script>
 </head>
 <body>
 
@@ -97,9 +85,10 @@
         <a href="index.html" class="navbar__link">Beranda</a>
         <a href="cara-kerja.html" class="navbar__link">Cara Kerja</a>
         <a href="harga.html" class="navbar__link">Harga</a>
-        <a href="faq.html" class="navbar__link">FAQ</a>
+        <a href="faq.html" class="navbar__link active">FAQ</a>
         <a href="anti-penipuan.html" class="navbar__link">Anti-Penipuan</a>
-        <a href="cod.html" class="navbar__link active">COD</a>
+        <a href="cod.html" class="navbar__link">COD</a>
+        <a href="blog/index.html" class="navbar__link">Blog</a>
       </div>
       <a href="https://wa.me/6288222267334?text=Halo%20KADENA%2C%20saya%20ingin%20cairkan%20limit%20paylater%2Fkartu%20kredit%20saya." class="navbar__cta" target="_blank" rel="noopener" onclick="trackWAClick('navbar_cta')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
@@ -111,10 +100,11 @@
       <a href="index.html" class="navbar__mobile-link">Beranda</a>
       <a href="cara-kerja.html" class="navbar__mobile-link">Cara Kerja</a>
       <a href="harga.html" class="navbar__mobile-link">Harga & Kalkulator</a>
-      <a href="faq.html" class="navbar__mobile-link">FAQ</a>
+      <a href="faq.html" class="navbar__mobile-link active">FAQ</a>
       <a href="anti-penipuan.html" class="navbar__mobile-link">Anti-Penipuan</a>
-      <a href="cod.html" class="navbar__mobile-link active">Layanan COD</a>
+      <a href="cod.html" class="navbar__mobile-link">Layanan COD</a>
       <a href="syarat-ketentuan.html" class="navbar__mobile-link">Syarat & Ketentuan</a>
+      <a href="blog/index.html" class="navbar__mobile-link">Blog</a>
       <a href="https://wa.me/6288222267334?text=Halo%20KADENA%2C%20saya%20ingin%20cairkan%20limit%20paylater%2Fkartu%20kredit%20saya." class="navbar__mobile-cta" target="_blank" rel="noopener" onclick="trackWAClick('mobile_menu_cta')">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
         Hubungi via WhatsApp
@@ -126,7 +116,7 @@
     <!-- BREADCRUMB -->
     <section class="section" style="padding-bottom:0;">
       <div class="container">
-        <div class="breadcrumb"><a href="index.html">Beranda</a><span>›</span><strong>Ketentuan COD</strong></div>
+        <div class="breadcrumb"><a href="index.html">Beranda</a><span>›</span><strong>FAQ</strong></div>
       </div>
     </section>
 
@@ -134,90 +124,34 @@
     <section class="hero section" style="padding-top:var(--space-lg);">
       <div class="container">
         <div class="section__header">
-          <span class="section__label">Layanan COD</span>
-          <h1 class="section__title">Ketentuan COD / Tatap Muka</h1>
-          <p class="section__subtitle">Selain layanan online, KADENA juga melayani transaksi gestun secara <strong>tatap muka (COD)</strong> di area Jakarta Selatan, Depok, dan Bogor. Tidak ada biaya tambahan untuk layanan COD.</p>
-          <span class="no-fee-badge">✅ Tanpa Biaya Tambahan COD</span>
+          <span class="section__label">FAQ</span>
+          <h1 class="section__title">Pertanyaan yang Sering Ditanyakan</h1>
+          <p class="section__subtitle">Temukan jawaban untuk pertanyaan umum seputar layanan gestun di KADENA. Tidak menemukan jawabannya? <a href="https://wa.me/6288222267334?text=Halo%20KADENA%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20gestun." target="_blank" rel="noopener" style="color:var(--primary);font-weight:600;">Tanya via WhatsApp →</a></p>
         </div>
       </div>
     </section>
 
-    <!-- AREA CARDS -->
-    <section class="section" id="area-section">
+    <!-- FAQ LIST -->
+    <section class="section" style="padding-top:0;" id="faq-list-section">
       <div class="container">
-        <div class="section__header">
-          <span class="section__label">Area Layanan</span>
-          <h2 class="section__title" style="font-size:var(--font-size-2xl);">Area COD Kami</h2>
+        <div class="faq-list" id="faq-list">
+          <p style="text-align:center;color:var(--text-tertiary);">Memuat data FAQ...</p>
         </div>
-        <div class="area-grid" id="area-grid">
-          <p style="text-align:center;color:var(--text-tertiary);grid-column:1/-1;">Memuat data area...</p>
+        <div class="testimoni-cta reveal reveal-up">
+          <p style="margin-bottom:var(--space-sm);font-weight:700;color:var(--text-primary);">Masih ragu? Lihat sendiri bukti transaksi kami 👇</p>
+          <a href="https://drive.google.com/drive/u/0/folders/1-uJO_IwyA4Dl5VLuUWt_wg8uNm8Xy7-Q" class="btn btn--accent" target="_blank" rel="noopener">📂 Lihat Ribuan Bukti Transaksi →</a>
         </div>
-      </div>
-    </section>
-
-    <!-- PROVIDER TABLE -->
-    <section class="section" style="background:var(--bg-secondary);" id="provider-section">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__label">Provider</span>
-          <h2 class="section__title" style="font-size:var(--font-size-2xl);">Provider yang Bisa COD</h2>
-          <p class="section__subtitle">Berikut daftar provider yang tersedia untuk transaksi COD beserta metode dan minimum transaksinya.</p>
-        </div>
-        <div class="table-wrap reveal reveal-up" id="provider-table-wrap">
-          <p style="text-align:center;padding:var(--space-xl);color:var(--text-tertiary);">Memuat data provider...</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SCHEDULE & INFO -->
-    <section class="section" id="info-section">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__label">Info COD</span>
-          <h2 class="section__title" style="font-size:var(--font-size-2xl);">Jadwal & Informasi</h2>
-        </div>
-        <div class="info-grid" id="info-grid">
-          <div class="info-box reveal reveal-up">
-            <div class="info-box__icon">🕐</div>
-            <div class="info-box__title" id="schedule-text">Memuat jadwal...</div>
-            <div class="info-box__desc">Jadwal COD tersedia di jam-jam tertentu</div>
-          </div>
-          <div class="info-box reveal reveal-up reveal-delay-1">
-            <div class="info-box__icon">💰</div>
-            <div class="info-box__title">Tanpa Biaya Tambahan</div>
-            <div class="info-box__desc" id="extra-fee-text">Fee COD sama dengan fee online</div>
-          </div>
-          <div class="info-box reveal reveal-up reveal-delay-2">
-            <div class="info-box__icon">📱</div>
-            <div class="info-box__title">Booking via WhatsApp</div>
-            <div class="info-box__desc">Hubungi admin untuk jadwalkan pertemuan COD</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MEETING LOCATIONS -->
-    <section class="section" style="background:var(--bg-secondary);" id="meeting-section">
-      <div class="container" style="max-width:800px;margin:0 auto;">
-        <div class="section__header">
-          <span class="section__label">Lokasi</span>
-          <h2 class="section__title" style="font-size:var(--font-size-2xl);">Opsi Lokasi Pertemuan</h2>
-          <p class="section__subtitle">Pilih lokasi yang paling nyaman untuk Anda. Lokasi pasti akan dikonfirmasi via WhatsApp setelah booking.</p>
-        </div>
-        <ul class="meeting-list reveal reveal-up" id="meeting-list">
-          <li>Memuat data lokasi...</li>
-        </ul>
       </div>
     </section>
 
     <!-- FINAL CTA -->
     <section class="section cta-gradient" id="cta-final">
       <div class="container" style="text-align:center;max-width:640px;margin:0 auto;">
-        <h2 class="reveal reveal-up" style="font-size:var(--font-size-2xl);margin-bottom:var(--space-md);">Mau Transaksi COD?</h2>
-        <p class="reveal reveal-up reveal-delay-1" style="opacity:0.85;font-size:var(--font-size-md);margin-bottom:var(--space-xl);">Hubungi admin kami via WhatsApp untuk jadwalkan pertemuan. Tersedia setiap hari, termasuk hari libur.</p>
-        <a href="https://wa.me/6288222267334?text=Halo%20KADENA%2C%20saya%20ingin%20transaksi%20gestun%20COD." class="btn btn--wa btn--lg reveal reveal-scale reveal-delay-2" target="_blank" rel="noopener" onclick="trackWAClick('cod_final_cta')">
+        <h2 class="reveal reveal-up" style="font-size:var(--font-size-2xl);margin-bottom:var(--space-md);">Pertanyaan Belum Terjawab?</h2>
+        <p class="reveal reveal-up reveal-delay-1" style="opacity:0.85;font-size:var(--font-size-md);margin-bottom:var(--space-xl);">Jangan ragu untuk menghubungi kami langsung. Admin kami siap membantu setiap hari pukul 07.00–23.00 WIB.</p>
+        <a href="https://wa.me/6288222267334?text=Halo%20KADENA%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20gestun." class="btn btn--wa btn--lg reveal reveal-scale reveal-delay-2" target="_blank" rel="noopener" onclick="trackWAClick('faq_final_cta')">
           <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-          Jadwalkan COD via WhatsApp
+          Tanya via WhatsApp
         </a>
       </div>
     </section>
@@ -238,6 +172,7 @@
           <a href="harga.html" class="footer__link">Harga & Kalkulator</a>
           <a href="faq.html" class="footer__link">FAQ</a>
           <a href="anti-penipuan.html" class="footer__link">Anti-Penipuan</a>
+          <a href="blog/index.html" class="footer__link">Blog</a>
         </div>
         <div>
           <h4 class="footer__heading">Layanan</h4>
@@ -272,73 +207,64 @@
       }
     }
 
-    // Area icons mapping
-    var areaIcons = { 'jakarta-selatan': '🏙️', 'depok': '🌆', 'bogor': '🌿' };
-
-    // Load COD data from JSON
+    // Load FAQ from JSON
     (function() {
-      fetch('cod-config.json')
+      fetch('faq-config.json')
         .then(function(res) { return res.json(); })
         .then(function(data) {
-          // AREA CARDS
-          var areaGrid = document.getElementById('area-grid');
-          var areaHTML = '';
-          data.coverage_areas.forEach(function(area, i) {
-            var icon = areaIcons[area.area_id] || '📍';
-            areaHTML += '<div class="area-card reveal reveal-up" style="animation-delay:' + (i * 0.1) + 's;">';
-            areaHTML += '<div class="area-card__icon">' + icon + '</div>';
-            areaHTML += '<div class="area-card__name">' + area.name + '</div>';
-            areaHTML += '<div class="area-card__desc">' + area.description + '</div>';
-            areaHTML += '</div>';
-          });
-          areaGrid.innerHTML = areaHTML;
+          var container = document.getElementById('faq-list');
+          var faqs = data.faqs;
+          var html = '';
+          var schemaFAQ = { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [] };
 
-          // PROVIDER TABLE
-          var tableWrap = document.getElementById('provider-table-wrap');
-          var tHTML = '<table class="provider-table"><thead><tr><th>Provider</th><th>Jenis Transaksi</th><th>Metode</th><th>Min. Transaksi</th></tr></thead><tbody>';
-          data.eligible_providers.forEach(function(p) {
-            tHTML += '<tr>';
-            tHTML += '<td style="font-weight:600;color:var(--text-primary);">' + p.provider_name + '</td>';
-            tHTML += '<td>' + p.transaction_type + '</td>';
-            tHTML += '<td><span class="method-badge">' + p.method + '</span></td>';
-            tHTML += '<td>' + p.min_transaction + '</td>';
-            tHTML += '</tr>';
-          });
-          tHTML += '</tbody></table>';
-          tableWrap.innerHTML = tHTML;
+          faqs.forEach(function(faq, i) {
+            html += '<div class="faq-item reveal reveal-up" style="animation-delay:' + (i * 0.04) + 's;">';
+            html += '<div class="faq-question" onclick="toggleFAQ(this)">';
+            html += '<span class="faq-question-text">' + faq.question + '</span>';
+            html += '<svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>';
+            html += '</div>';
+            html += '<div class="faq-answer"><div class="faq-answer-inner">';
+            html += '<p>' + faq.answer + '</p>';
+            if (faq.reference_path) {
+              var refLabel = 'Selengkapnya →';
+              if (faq.reference_path === '/harga') refLabel = 'Lihat Daftar Harga & Tarif →';
+              else if (faq.reference_path === '/cod') refLabel = 'Lihat Ketentuan COD →';
+              else if (faq.reference_path === '/testimoni') refLabel = 'Lihat Bukti Transaksi →';
+              var refHref = faq.reference_path === '/testimoni'
+                ? 'https://drive.google.com/drive/u/0/folders/1-uJO_IwyA4Dl5VLuUWt_wg8uNm8Xy7-Q'
+                : faq.reference_path.replace('/', '') + '.html';
+              var refTarget = faq.reference_path === '/testimoni' ? ' target="_blank" rel="noopener"' : '';
+              html += '<a href="' + refHref + '" class="faq-ref"' + refTarget + '>' + refLabel + '</a>';
+            }
+            html += '</div></div></div>';
 
-          // SCHEDULE
-          var scheduleEl = document.getElementById('schedule-text');
-          if (data.schedule) {
-            scheduleEl.textContent = data.schedule.days + ', ' + data.schedule.time_slots.join(' & ');
-          }
-
-          // EXTRA FEE
-          var feeEl = document.getElementById('extra-fee-text');
-          if (data.extra_fee !== undefined) {
-            feeEl.textContent = data.extra_fee === 0 ? 'Fee COD sama persis dengan fee online — tanpa biaya tambahan apapun' : 'Biaya tambahan: Rp ' + data.extra_fee.toLocaleString('id-ID');
-          }
-
-          // MEETING LOCATIONS
-          var meetingList = document.getElementById('meeting-list');
-          var mHTML = '';
-          if (data.meeting_location_options && data.meeting_location_options.length > 0) {
-            data.meeting_location_options.forEach(function(loc) {
-              mHTML += '<li>' + loc + '</li>';
+            schemaFAQ.mainEntity.push({
+              "@type": "Question", "name": faq.question,
+              "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
             });
-          } else {
-            mHTML = '<li>Lokasi akan ditentukan via WhatsApp</li>';
-          }
-          meetingList.innerHTML = mHTML;
+          });
 
-          // Re-observe reveals
-          document.querySelectorAll('.reveal:not(.visible)').forEach(function(el) { revealObserver.observe(el); });
+          container.innerHTML = html;
+          document.getElementById('faq-schema').textContent = JSON.stringify(schemaFAQ);
+          container.querySelectorAll('.reveal').forEach(function(el) { revealObserver.observe(el); });
         })
         .catch(function(err) {
-          console.error('Error loading COD data:', err);
-          document.getElementById('area-grid').innerHTML = '<p style="text-align:center;color:#dc2626;grid-column:1/-1;">Gagal memuat data COD. Silakan refresh halaman.</p>';
+          console.error('Error loading FAQ:', err);
+          document.getElementById('faq-list').innerHTML = '<p style="text-align:center;color:#dc2626;">Gagal memuat data FAQ. Silakan refresh halaman.</p>';
         });
     })();
+
+    function toggleFAQ(el) {
+      var item = el.parentElement;
+      var answer = item.querySelector('.faq-answer');
+      var inner = answer.querySelector('.faq-answer-inner');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(o) {
+        if (o !== item) { o.classList.remove('open'); o.querySelector('.faq-answer').style.maxHeight = '0'; }
+      });
+      if (isOpen) { item.classList.remove('open'); answer.style.maxHeight = '0'; }
+      else { item.classList.add('open'); answer.style.maxHeight = inner.scrollHeight + 32 + 'px'; }
+    }
 
     // Scroll Reveal
     var revealElements = document.querySelectorAll('.reveal');
