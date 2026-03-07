@@ -58,8 +58,8 @@
               "service_id": "kredivo-tokopedia",
               "transaction_type": "Check-out di Tokopedia",
               "method": "marketplace_checkout",
-              "fee_percent": 6,
-              "processing_time": "6 jam",
+              "fee_percent": 15,
+              "processing_time": "H+2 (2 hari)",
               "processing_time_minutes": 360
             },
             {
