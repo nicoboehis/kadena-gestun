@@ -322,7 +322,7 @@ p {
 }
 
 .navbar__logo img {
-  height: 36px;
+  height: 48px;
   width: auto;
 }
 
@@ -1141,7 +1141,7 @@ body {
 }
 
 .footer__brand img {
-  height: 36px;
+  height: 48px;
   width: auto;
   margin-bottom: var(--space-md);
 }
@@ -1266,6 +1266,16 @@ body {
 .reveal-delay-4 { animation-delay: 0.4s; }
 .reveal-delay-5 { animation-delay: 0.5s; }
 
+/* Mobile: button overflow fix */
+@media (max-width: 767px) {
+  .btn--lg {
+    padding: 0.875rem 1.5rem;
+    font-size: var(--font-size-base);
+    max-width: 100%;
+    white-space: normal;
+    word-break: break-word;
+  }
+}
 /* Prefers reduced motion */
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -1419,9 +1429,6 @@ body {
 /* ============================================================
    PATCH: Mobile Hamburger Menu Fix
    Replaces transform-based toggle with display-based toggle.
-   Some Android WebView / mobile Chrome builds don't properly
-   render transform on fixed-position elements that sit under
-   a backdrop-filter parent (the navbar).
    ============================================================ */
 .navbar__mobile {
   transform: none !important;

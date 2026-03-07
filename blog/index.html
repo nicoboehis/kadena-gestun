@@ -5,23 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO -->
-  <title>Jasa Gestun Paylater & Kartu Kredit Online — Cepat & Terpercaya | KADENA</title>
-  <meta name="description" content="Cairkan limit Shopee PayLater, Kredivo, Akulaku, GoPay Later, DANA & kartu kredit Anda. 5000+ transaksi sejak 2021. Proses cepat 1-2 jam, aman, terpercaya. Hubungi KADENA sekarang!">
-  <meta name="keywords" content="gestun paylater, jasa gestun, cairkan limit paylater, gestun shopee paylater, gestun kredivo, gestun akulaku, gestun kartu kredit, gestun online terpercaya, gestun COD depok bogor jakarta selatan">
+  <title>Blog — Tips & Panduan Gestun Paylater & Kartu Kredit | KADENA</title>
+  <meta name="description" content="Baca artikel, tips, dan panduan lengkap seputar gestun paylater dan kartu kredit. Informasi terpercaya dari KADENA Gestun.">
+  <meta name="keywords" content="blog gestun, tips gestun paylater, panduan cairkan limit, artikel gestun, gestun online">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://kadenagestun.my.id/">
+  <link rel="canonical" href="https://kadenagestun.my.id/blog/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Jasa Gestun Paylater & Kartu Kredit — KADENA">
-  <meta property="og:description" content="Cairkan limit paylater & kartu kredit Anda. 5000+ transaksi sejak 2021. Cepat, aman, terpercaya.">
-  <meta property="og:url" content="https://kadenagestun.my.id/">
+  <meta property="og:title" content="Blog — Tips & Panduan Gestun | KADENA">
+  <meta property="og:description" content="Baca artikel, tips, dan panduan lengkap seputar gestun paylater dan kartu kredit.">
+  <meta property="og:url" content="https://kadenagestun.my.id/blog/">
   <meta property="og:image" content="https://kadenagestun.my.id/assets/images/og-image.png">
   <meta property="og:site_name" content="KADENA Gestun">
   <meta property="og:locale" content="id_ID">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="icon" type="image/png" href="../assets/icons/favicon.png">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,17 +29,70 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 
   <!-- Page-specific styles -->
   <style>
-    .value-grid {
+    .breadcrumb { padding: var(--space-sm) 0; font-size: var(--font-size-sm); color: var(--text-tertiary); }
+    .breadcrumb a { color: var(--primary); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 var(--space-xs); }
+
+    .blog-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: var(--space-lg);
-      max-width: 900px;
+      max-width: 800px;
       margin: 0 auto;
     }
+
+    .blog-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      display: block;
+    }
+    .blog-card:hover {
+      border-color: var(--primary);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    }
+
+    .blog-card__meta {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      font-size: var(--font-size-xs);
+      color: var(--text-tertiary);
+      margin-bottom: var(--space-sm);
+    }
+    .blog-card__date { color: var(--text-tertiary); }
+    .blog-card__author { color: var(--text-secondary); font-weight: 500; }
+    .blog-card__dot { color: var(--text-tertiary); }
+
+    .blog-card__title {
+      font-size: var(--font-size-lg);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: var(--space-sm);
+      line-height: 1.4;
+    }
+
+    .blog-card__excerpt {
+      font-size: var(--font-size-sm);
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: var(--space-md);
+    }
+
+    .blog-card__link {
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      color: var(--primary);
+    }
+
     .cta-gradient {
       background: linear-gradient(135deg, var(--primary), var(--primary-dark));
     }
@@ -47,42 +100,9 @@
     .cta-gradient p {
       color: var(--text-inverse);
     }
-    @media (min-width: 768px) {
-      .value-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-    /* Calculator Widget */
-    .calculator-widget { background: var(--bg-card); border-radius: var(--radius-lg); padding: var(--space-xl); border: 1px solid var(--border); max-width: 560px; margin: 0 auto; }
-    .calc-field { margin-bottom: var(--space-md); }
-    .calc-label { display: block; font-weight: 600; margin-bottom: var(--space-xs); color: var(--text-primary); font-size: var(--font-size-sm); }
-    .calc-provider-select,
-    .calc-nominal-input { width: 100%; padding: var(--space-sm) var(--space-md); border: 1px solid var(--border); border-radius: var(--radius-md); font-size: var(--font-size-base); font-family: inherit; background: var(--bg-primary); color: var(--text-primary); transition: border-color 0.2s; }
-    .calc-provider-select:focus,
-    .calc-nominal-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(11,188,214,0.15); }
-    .calc-input-wrap { display: flex; align-items: center; border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; transition: border-color 0.2s; }
-    .calc-input-wrap:focus-within { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(11,188,214,0.15); }
-    .calc-input-prefix { padding: var(--space-sm) var(--space-md); background: var(--bg-secondary); color: var(--text-secondary); font-weight: 600; font-size: var(--font-size-sm); border-right: 1px solid var(--border); white-space: nowrap; }
-    .calc-input-wrap .calc-nominal-input { border: none; border-radius: 0; }
-    .calc-input-wrap .calc-nominal-input:focus { box-shadow: none; }
-    .calc-error { background: #fef2f2; color: #dc2626; padding: var(--space-sm) var(--space-md); border-radius: var(--radius-md); font-size: var(--font-size-sm); margin-bottom: var(--space-md); }
-    .calc-result { margin-top: var(--space-lg); padding: var(--space-lg); background: linear-gradient(135deg, rgba(11,188,214,0.08), rgba(232,75,138,0.06)); border-radius: var(--radius-lg); text-align: center; }
-    .calc-result-main { margin-bottom: var(--space-md); }
-    .calc-result-label { display: block; font-size: var(--font-size-sm); color: var(--text-secondary); margin-bottom: var(--space-xs); }
-    .calc-net-amount { display: block; font-size: var(--font-size-2xl); font-weight: 800; color: var(--primary); }
-    .calc-result-details { display: flex; flex-direction: column; gap: var(--space-xs); font-size: var(--font-size-sm); color: var(--text-secondary); margin-bottom: var(--space-md); }
-    .calc-disclaimer { font-size: 0.75rem; color: var(--text-tertiary); font-style: italic; margin-top: var(--space-sm); margin-bottom: 0; }
-    /* Provider Chips (menggantikan logo image agar selalu tampil) */
-    .provider-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
-    .provider-chip { display: inline-flex; align-items: center; gap: 6px; padding: 8px 18px; background: var(--bg-white); border: 1.5px solid var(--border); border-radius: var(--radius-full); font-size: var(--font-size-sm); font-weight: 600; color: var(--text-primary); white-space: nowrap; transition: all var(--transition-base); }
-    .provider-chip:hover { border-color: var(--primary); box-shadow: var(--shadow); transform: translateY(-2px); }
-    .provider-chip .chip-icon { font-size: 1.1rem; }
-    /* Hero Image */
-    .hero__image { margin-top: var(--space-2xl); }
-    .hero__image img { width: 100%; max-width: 600px; margin: 0 auto; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
   </style>
 
-  <!-- Google Analytics (GA4) — UNCOMMENT & GANTI ID setelah punya -->
+  <!-- GA4 placeholder -->
   <!--
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
@@ -92,405 +112,123 @@
     gtag('config', 'G-XXXXXXXXXX');
   </script>
   -->
-
-  <!-- Schema Markup: LocalBusiness -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "KADENA Gestun",
-    "description": "Jasa pencairan limit paylater dan kartu kredit terpercaya. Melayani online seluruh Indonesia dan COD area Jakarta Selatan, Depok, Bogor.",
-    "url": "https://kadenagestun.my.id",
-    "telephone": "+6288222267334",
-    "image": "https://kadenagestun.my.id/assets/logos/logo-kadena-gestun.png",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Depok",
-      "addressRegion": "Jawa Barat",
-      "addressCountry": "ID"
-    },
-    "areaServed": [
-      {"@type": "City", "name": "Jakarta Selatan"},
-      {"@type": "City", "name": "Depok"},
-      {"@type": "City", "name": "Bogor"},
-      {"@type": "Country", "name": "Indonesia"}
-    ],
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-      "opens": "07:00",
-      "closes": "23:00"
-    },
-    "sameAs": [
-      "https://www.instagram.com/gestun.kadena"
-    ]
-  }
-  </script>
 </head>
 <body>
 
-  <!-- ============================================
-       NAVBAR
-       ============================================ -->
+  <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="container navbar__inner">
-      <!-- Logo -->
-      <a href="index.html" class="navbar__logo">
-        <img src="assets/logos/logo-kadena-gestun.png" alt="KADENA Gestun Logo" width="140" height="36">
+      <a href="../index.html" class="navbar__logo">
+        <img src="../assets/logos/logo-kadena-gestun.png" alt="KADENA Gestun Logo" width="140" height="36">
       </a>
-
-      <!-- Desktop Menu -->
       <div class="navbar__menu">
-        <a href="index.html" class="navbar__link active">Beranda</a>
-        <a href="harga.html" class="navbar__link">Harga</a>
-        <a href="faq.html" class="navbar__link">FAQ</a>
-        <a href="testimoni.html" class="navbar__link">Testimoni</a>
-        <a href="cod.html" class="navbar__link">COD</a>
-        <a href="syarat-ketentuan.html" class="navbar__link">S&K</a>
-        <a href="blog/index.html" class="navbar__link">Blog</a>
+        <a href="../index.html" class="navbar__link">Beranda</a>
+        <a href="../harga.html" class="navbar__link">Harga</a>
+        <a href="../faq.html" class="navbar__link">FAQ</a>
+        <a href="../cod.html" class="navbar__link">COD</a>
+        <a href="../testimoni.html" class="navbar__link">Testimoni</a>
+        <a href="../syarat-ketentuan.html" class="navbar__link">S&K</a>
+        <a href="index.html" class="navbar__link active">Blog</a>
       </div>
-
-      <!-- Desktop CTA -->
-      <a href="https://wa.me/6288222267334?text=Halo%20KADENA%2C%20saya%20ingin%20cairkan%20limit%20paylater%2Fkartu%20kredit%20saya."
-         class="navbar__cta" target="_blank" rel="noopener"
-         onclick="trackWAClick('navbar_cta')">
+      <a href="https://wa.me/6288222267334?text=Halo%20KADENA%2C%20saya%20ingin%20cairkan%20limit%20paylater%2Fkartu%20kredit%20saya." class="navbar__cta" target="_blank" rel="noopener" onclick="trackWAClick('navbar_cta')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
         WhatsApp Kami
       </a>
-
-      <!-- Hamburger (Mobile) -->
-      <button class="navbar__toggle" id="navToggle" aria-label="Menu navigasi">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <button class="navbar__toggle" id="navToggle" aria-label="Menu navigasi"><span></span><span></span><span></span></button>
     </div>
-
-    <!-- Mobile Menu -->
     <div class="navbar__mobile" id="navMobile">
-      <a href="index.html" class="navbar__mobile-link active">Beranda</a>
-      <a href="harga.html" class="navbar__mobile-link">Harga & Kalkulator</a>
-      <a href="faq.html" class="navbar__mobile-link">FAQ</a>
-      <a href="testimoni.html" class="navbar__mobile-link">Testimoni</a>
-      <a href="cod.html" class="navbar__mobile-link">Layanan COD</a>
-      <a href="syarat-ketentuan.html" class="navbar__mobile-link">Syarat & Ketentuan</a>
-      <a href="blog/index.html" class="navbar__mobile-link">Blog</a>
-      <a href="https://wa.me/6288222267334?text=Halo%20KADENA%2C%20saya%20ingin%20cairkan%20limit%20paylater%2Fkartu%20kredit%20saya."
-         class="navbar__mobile-cta" target="_blank" rel="noopener"
-         onclick="trackWAClick('mobile_menu_cta')">
+      <a href="../index.html" class="navbar__mobile-link">Beranda</a>
+      <a href="../harga.html" class="navbar__mobile-link">Harga & Kalkulator</a>
+      <a href="../faq.html" class="navbar__mobile-link">FAQ</a>
+      <a href="../cod.html" class="navbar__mobile-link">Layanan COD</a>
+      <a href="../testimoni.html" class="navbar__mobile-link">Testimoni</a>
+      <a href="../syarat-ketentuan.html" class="navbar__mobile-link">Syarat & Ketentuan</a>
+      <a href="index.html" class="navbar__mobile-link active">Blog</a>
+      <a href="https://wa.me/6288222267334?text=Halo%20KADENA%2C%20saya%20ingin%20cairkan%20limit%20paylater%2Fkartu%20kredit%20saya." class="navbar__mobile-cta" target="_blank" rel="noopener" onclick="trackWAClick('mobile_menu_cta')">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
         Hubungi via WhatsApp
       </a>
     </div>
   </nav>
 
-
   <main>
+    <!-- BREADCRUMB -->
+    <section class="section" style="padding-bottom:0;">
+      <div class="container">
+        <div class="breadcrumb"><a href="../index.html">Beranda</a><span>›</span><strong>Blog</strong></div>
+      </div>
+    </section>
 
-    <!-- ============================================
-         HERO SECTION
-         ============================================ -->
-    <section class="hero section">
-      <div class="container hero__content">
-        <!-- Badge -->
-        <div class="hero__badge reveal reveal-up">
-          <span class="hero__badge-dot"></span>
-          5.000+ Transaksi Sejak 2021
+    <!-- HERO -->
+    <section class="hero section" style="padding-top:var(--space-lg);">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Blog KADENA</span>
+          <h1 class="section__title">Tips & Panduan Gestun Paylater</h1>
+          <p class="section__subtitle">Informasi terpercaya seputar cara cairkan limit paylater dan kartu kredit, tips keuangan, dan panduan lengkap dari KADENA Gestun.</p>
         </div>
+      </div>
+    </section>
 
-        <!-- Headline -->
-        <h1 class="hero__title reveal reveal-up reveal-delay-1">
-          Cairkan Limit <span class="text-gradient">Paylater & Kartu Kredit</span> Anda
-        </h1>
+    <!-- BLOG LISTING -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="blog-grid">
 
-        <!-- Subtitle -->
-        <p class="hero__subtitle reveal reveal-up reveal-delay-2">
-          Cepat, aman, terpercaya. Proses online dari mana saja atau COD transaksi tatap muka. Ratusan pelanggan loyal dari seluruh Indonesia.
-        </p>
-
-        <!-- CTA Buttons -->
-        <div class="hero__actions reveal reveal-up reveal-delay-3">
-          <a href="https://wa.me/6288222267334?text=Halo%20KADENA%2C%20saya%20ingin%20cairkan%20limit%20paylater%2Fkartu%20kredit%20saya."
-             class="btn btn--wa btn--lg" target="_blank" rel="noopener"
-             onclick="trackWAClick('hero_cta')">
-            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-            Hubungi via WhatsApp
+          <!-- Artikel 1 -->
+          <a href="cara-cairkan-limit-shopee-paylater.html" class="blog-card reveal reveal-up">
+            <div class="blog-card__meta">
+              <span class="blog-card__date">7 Maret 2026</span>
+              <span class="blog-card__dot">•</span>
+              <span class="blog-card__author">Tesa Ria</span>
+            </div>
+            <h2 class="blog-card__title">Cara Cairkan Limit Shopee PayLater Tanpa Kartu Kredit 2026 — Panduan Lengkap</h2>
+            <p class="blog-card__excerpt">Punya limit Shopee PayLater tapi butuh uang tunai? Pelajari cara mencairkan limit Shopee PayLater dengan aman, cepat, dan terpercaya. Tanpa kartu kredit, tanpa ribet.</p>
+            <span class="blog-card__link">Baca selengkapnya →</span>
           </a>
-          <a href="harga.html" class="btn btn--outline btn--lg">
-            Lihat Harga & Simulasi
-          </a>
-        </div>
 
-        <!-- Stats -->
-        <div class="hero__stats reveal reveal-up reveal-delay-4">
-          <div class="hero__stat">
-            <div class="hero__stat-value">5.000+</div>
-            <div class="hero__stat-label">Transaksi Berhasil</div>
-          </div>
-          <div class="hero__stat">
-            <div class="hero__stat-value">2021</div>
-            <div class="hero__stat-label">Beroperasi Sejak</div>
-          </div>
-          <div class="hero__stat">
-            <div class="hero__stat-value">350+</div>
-            <div class="hero__stat-label">Pelanggan Loyal</div>
-          </div>
-        </div>
-        <!-- Hero Image -->
-        <div class="hero__image reveal reveal-up">
-          <img src="assets/images/hero-kadena.png" alt="KADENA Gestun — Jasa Pencairan Limit Paylater dan Kartu Kredit Terpercaya" onerror="this.parentElement.style.display='none'">
+          <!-- Tambahkan artikel baru di sini -->
+
         </div>
       </div>
     </section>
 
-
-    <!-- ============================================
-         PROVIDER LOGOS (Trust Strip)
-         ============================================ -->
-    <section class="providers">
-      <div class="container">
-        <p class="providers__title">Melayani Pencairan Limit Dari</p>
-        <div class="provider-chips">
-          <span class="provider-chip"><span class="chip-icon">🛒</span> Shopee PayLater</span>
-          <span class="provider-chip"><span class="chip-icon">💳</span> Kredivo</span>
-          <span class="provider-chip"><span class="chip-icon">🛍️</span> Akulaku</span>
-          <span class="provider-chip"><span class="chip-icon">💳</span> GoPay Later</span>
-          <span class="provider-chip"><span class="chip-icon">💳</span> DANA</span>
-          <span class="provider-chip"><span class="chip-icon">💳</span> Indodana</span>
-          <span class="provider-chip"><span class="chip-icon">⚡</span> Atome</span>
-          <span class="provider-chip"><span class="chip-icon">💳</span> Visa</span>
-          <span class="provider-chip"><span class="chip-icon">💳</span> Mastercard</span>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ============================================
-         KENAPA PILIH KADENA?
-         ============================================ -->
-    <section class="section section--alt" id="kenapa-kami">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__label">Mengapa pilih KADENA?</span>
-          <h2 class="section__title">Layanan Gestun yang Bisa Anda Percaya</h2>
-          <p class="section__subtitle">Kami mengutamakan kecepatan, keamanan, dan transparansi dalam setiap transaksi.</p>
-        </div>
-
-        <div class="value-grid">
-          <!-- Card 1: Cepat -->
-          <div class="card reveal reveal-up">
-            <div class="card__icon">
-              <span style="font-size:24px;">⚡</span>
-            </div>
-            <h3 class="card__title">Proses Cepat</h3>
-            <p class="card__text">Rata-rata proses pencairan hanya 5 menit. Beberapa provider bahkan bisa lebih cepat. Anda tidak perlu menunggu lama.</p>
-          </div>
-
-          <!-- Card 2: Aman -->
-          <div class="card reveal reveal-up reveal-delay-1">
-            <div class="card__icon">
-              <span style="font-size:24px;">🛡️</span>
-            </div>
-            <h3 class="card__title">Aman & Transparan</h3>
-            <p class="card__text">Fee jelas di depan, tanpa biaya tersembunyi. Ribuan bukti transaksi real bisa Anda verifikasi langsung.</p>
-          </div>
-
-          <!-- Card 3: Banyak Provider -->
-          <div class="card reveal reveal-up reveal-delay-2">
-            <div class="card__icon">
-              <span style="font-size:24px;">💳</span>
-            </div>
-            <h3 class="card__title">Banyak Provider</h3>
-            <p class="card__text">Shopee PayLater, Kredivo, Akulaku, GoPay Later, DANA, Indodana, Atome, kartu kredit Visa & Mastercard — semua bisa dicairkan.</p>
-          </div>
-
-          <!-- Card 4: Online & COD -->
-          <div class="card reveal reveal-up reveal-delay-3">
-            <div class="card__icon">
-              <span style="font-size:24px;">📍</span>
-            </div>
-            <h3 class="card__title">Online & COD</h3>
-            <p class="card__text">Proses full online dari seluruh Indonesia, atau tatap muka (COD) di area Jakarta Selatan, Depok & Bogor.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ============================================
-         CARA KERJA (Preview)
-         ============================================ -->
-    <section class="section" id="cara-kerja">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__label">Cara Kerja</span>
-          <h2 class="section__title">4 Langkah Mudah Cairkan Limit Anda</h2>
-          <p class="section__subtitle">Prosesnya simpel, cepat, dan bisa dilakukan dari mana saja.</p>
-        </div>
-
-        <div class="steps" style="max-width:700px; margin:0 auto;">
-          <div class="step reveal reveal-left">
-            <div class="step__number">1</div>
-            <div class="step__content">
-              <h3>Hubungi Admin via WhatsApp</h3>
-              <p>Sampaikan provider paylater atau kartu kredit dan nominal yang ingin dicairkan.</p>
-            </div>
-          </div>
-
-          <div class="step reveal reveal-left reveal-delay-1">
-            <div class="step__number">2</div>
-            <div class="step__content">
-              <h3>Admin Infokan Fee & Metode</h3>
-              <p>Kami jelaskan fee, metode transaksi (QRIS/marketplace/e-invoicing), dan estimasi waktu proses.</p>
-            </div>
-          </div>
-
-          <div class="step reveal reveal-left reveal-delay-2">
-            <div class="step__number">3</div>
-            <div class="step__content">
-              <h3>Proses Transaksi</h3>
-              <p>Ikuti instruksi admin untuk menyelesaikan transaksi. Bisa online atau tatap muka (COD).</p>
-            </div>
-          </div>
-
-          <div class="step reveal reveal-left reveal-delay-3">
-            <div class="step__number">4</div>
-            <div class="step__content">
-              <h3>Uang Cair ke Rekening Anda</h3>
-              <p>Dana bersih (setelah potong fee) ditransfer langsung ke rekening Anda. Selesai! ✅</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center mt-xl reveal reveal-up">
-          <a href="syarat-ketentuan.html" class="btn btn--outline">Lihat Syarat Ketentuan →</a>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ============================================
-         KALKULATOR SIMULASI TARIF
-         ============================================ -->
-    <section class="section" id="kalkulator">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__label">Kalkulator Simulasi Tarif</span>
-          <h2 class="section__title">Mau Tahu Berapa yang Anda Terima?</h2>
-          <p class="section__subtitle">Simulasikan sekarang! Pilih jenis paylater atau kartu kredit, masukkan nominal, dan langsung lihat estimasi dana bersih yang masuk ke rekening Anda.</p>
-        </div>
-        <div class="calculator-widget reveal reveal-up">
-          <div class="calc-error" style="display:none;"></div>
-          <div class="calc-field">
-            <label class="calc-label">Jenis & Metode Transaksi</label>
-            <select class="calc-provider-select">
-              <option value="" disabled selected>Pilih jenis & metode transaksi</option>
-            </select>
-          </div>
-          <div class="calc-field">
-            <label class="calc-label">Nominal Transaksi</label>
-            <div class="calc-input-wrap">
-              <span class="calc-input-prefix">Rp</span>
-              <input type="text" class="calc-nominal-input" placeholder="1.000.000" inputmode="numeric">
-            </div>
-          </div>
-          <button class="btn btn--primary btn--lg calc-btn" style="width:100%;">Hitung</button>
-          <div class="calc-result" style="display:none;">
-            <div class="calc-result-main">
-              <span class="calc-result-label">Anda Terima Bersih</span>
-              <span class="calc-net-amount"></span>
-            </div>
-            <div class="calc-result-details">
-              <span class="calc-fee-percent"></span>
-              <span class="calc-fee-amount"></span>
-              <span class="calc-processing-time"></span>
-            </div>
-            <p class="calc-disclaimer">* Tarif sudah mencakup seluruh biaya. Tidak ada potongan tambahan lainnya.</p>
-            <button class="btn btn--wa btn--lg calc-wa-btn" style="width:100%; margin-top:var(--space-md);">
-              <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-              Hubungi via WhatsApp
-            </button>
-          </div>
-        </div>
-        <div class="text-center mt-xl reveal reveal-up" style="margin-top:var(--space-lg);">
-          <a href="harga.html" class="btn btn--outline">Lihat Daftar Tarif Lengkap →</a>
-        </div>
-      </div>
-    </section>
-    <!-- ============================================
-         TESTIMONI / SOCIAL PROOF CTA
-         ============================================ -->
-    <section class="section section--alt" id="testimoni">
-      <div class="container" style="text-align:center; max-width:700px; margin:0 auto;">
-        <span class="section__label">Bukti Nyata</span>
-        <h2 class="section__title reveal reveal-up">Ribuan Bukti Transaksi Sejak 2021</h2>
-        <p class="section__subtitle reveal reveal-up reveal-delay-1" style="margin-bottom:var(--space-xl);">
-          Jangan percaya kata-kata — lihat sendiri ribuan screenshot bukti transaksi real dari pelanggan kami di seluruh Indonesia.
-        </p>
-        <a href="https://drive.google.com/drive/u/0/folders/1-uJO_IwyA4Dl5VLuUWt_wg8uNm8Xy7-Q"
-           class="btn btn--accent btn--lg reveal reveal-scale reveal-delay-2"
-           target="_blank" rel="noopener">
-          📂 Lihat Ribuan Bukti Transaksi →
-        </a>
-      </div>
-    </section>
-
-
-    <!-- ============================================
-         FINAL CTA
-         ============================================ -->
+    <!-- FINAL CTA -->
     <section class="section cta-gradient" id="cta-final">
-      <div class="container" style="text-align:center; max-width:640px; margin:0 auto;">
-        <h2 class="reveal reveal-up" style="font-size:var(--font-size-2xl); margin-bottom:var(--space-md);">
-          Siap Cairkan Limit Anda?
-        </h2>
-        <p class="reveal reveal-up reveal-delay-1" style="opacity:0.85; font-size:var(--font-size-md); margin-bottom:var(--space-xl);">
-          Hubungi kami sekarang. Proses cepat, fee transparan, dan bisa langsung dimulai hari ini.
-        </p>
-        <a href="https://wa.me/6288222267334?text=Halo%20KADENA%2C%20saya%20ingin%20cairkan%20limit%20paylater%2Fkartu%20kredit%20saya."
-           class="btn btn--wa btn--lg reveal reveal-scale reveal-delay-2"
-           target="_blank" rel="noopener"
-           onclick="trackWAClick('final_cta')">
+      <div class="container" style="text-align:center;max-width:640px;margin:0 auto;">
+        <h2 class="reveal reveal-up" style="font-size:var(--font-size-2xl);margin-bottom:var(--space-md);">Siap Cairkan Limit Anda?</h2>
+        <p class="reveal reveal-up reveal-delay-1" style="opacity:0.85;font-size:var(--font-size-md);margin-bottom:var(--space-xl);">Hubungi kami sekarang. Proses cepat, fee transparan, dan bisa langsung dimulai hari ini.</p>
+        <a href="https://wa.me/6288222267334?text=Halo%20KADENA%2C%20saya%20ingin%20cairkan%20limit%20paylater%2Fkartu%20kredit%20saya." class="btn btn--wa btn--lg reveal reveal-scale reveal-delay-2" target="_blank" rel="noopener" onclick="trackWAClick('blog_listing_final_cta')">
           <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
           Hubungi via WhatsApp Sekarang
         </a>
       </div>
     </section>
-
   </main>
 
-
-  <!-- ============================================
-       FOOTER
-       ============================================ -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
-        <!-- Brand -->
         <div class="footer__brand">
-          <img src="assets/logos/logo-kadena-gestun.png" alt="KADENA Gestun" width="140" height="36" style="filter:brightness(0) invert(1); opacity:0.9;">
+          <img src="../assets/logos/logo-kadena-gestun.png" alt="KADENA Gestun" width="140" height="36" style="filter:brightness(0) invert(1);opacity:0.9;">
           <p>Jasa pencairan limit paylater & kartu kredit terpercaya sejak 2021. Melayani online seluruh Indonesia dan COD di Jaksel, Depok & Bogor.</p>
         </div>
-
-        <!-- Menu -->
         <div>
           <h4 class="footer__heading">Menu</h4>
-          <a href="index.html" class="footer__link">Beranda</a>
-          <a href="harga.html" class="footer__link">Harga & Kalkulator</a>
-          <a href="faq.html" class="footer__link">FAQ</a>
-          <a href="testimoni.html" class="footer__link">Testimoni</a>
-          <a href="blog/index.html" class="footer__link">Blog</a>
+          <a href="../index.html" class="footer__link">Beranda</a>
+          <a href="../harga.html" class="footer__link">Harga & Kalkulator</a>
+          <a href="../faq.html" class="footer__link">FAQ</a>
+          <a href="../cod.html" class="footer__link">COD</a>
+          <a href="../testimoni.html" class="footer__link">Testimoni</a>
+          <a href="index.html" class="footer__link">Blog</a>
         </div>
-
-        <!-- Layanan -->
         <div>
           <h4 class="footer__heading">Layanan</h4>
-          <a href="cod.html" class="footer__link">Ketentuan COD</a>
-          <a href="syarat-ketentuan.html" class="footer__link">Syarat & Ketentuan</a>
-          <a href="testimoni.html" class="footer__link">Testimoni & Bukti Transaksi</a>
+          <a href="../cod.html" class="footer__link">Ketentuan COD</a>
+          <a href="../syarat-ketentuan.html" class="footer__link">Syarat & Ketentuan</a>
+          <a href="../testimoni.html" class="footer__link">Testimoni & Bukti Transaksi</a>
         </div>
-
-        <!-- Kontak -->
         <div>
           <h4 class="footer__heading">Kontak</h4>
           <a href="https://wa.me/6288222267334" class="footer__link" target="_blank" rel="noopener">📱 0882-222-67334 (WA)</a>
@@ -498,77 +236,49 @@
           <span class="footer__link">🕐 07.00–23.00 WIB (Setiap Hari)</span>
         </div>
       </div>
-
       <div class="footer__bottom">
         <p>&copy; 2021–2026 KADENA Gestun. Semua hak dilindungi.</p>
-        <p><a href="syarat-ketentuan.html" class="footer__link" style="display:inline;">Syarat & Ketentuan</a></p>
+        <p><a href="../syarat-ketentuan.html" class="footer__link" style="display:inline;">Syarat & Ketentuan</a></p>
       </div>
     </div>
   </footer>
 
-
-  <!-- ============================================
-       FLOATING WHATSAPP BUTTON
-       ============================================ -->
-  <a href="https://wa.me/6288222267334?text=Halo%20KADENA%2C%20saya%20ingin%20cairkan%20limit%20paylater%2Fkartu%20kredit%20saya."
-     class="wa-float" target="_blank" rel="noopener" aria-label="Hubungi via WhatsApp"
-     onclick="trackWAClick('floating')">
+  <!-- FLOATING WA -->
+  <a href="https://wa.me/6288222267334?text=Halo%20KADENA%2C%20saya%20ingin%20cairkan%20limit%20paylater%2Fkartu%20kredit%20saya." class="wa-float" target="_blank" rel="noopener" aria-label="Hubungi via WhatsApp" onclick="trackWAClick('floating')">
     <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
   </a>
 
-
-  <!-- ============================================
-       SCRIPTS
-       ============================================ -->
-  <script src="js/calculator.js"></script>
+  <!-- SCRIPTS -->
   <script>
-    // === GA4 WhatsApp Click Tracker ===
-    // Fungsi ini akan aktif setelah GA4 di-uncomment di <head>
     function trackWAClick(buttonType, provider) {
       if (typeof gtag === 'function') {
-        gtag('event', 'whatsapp_click', {
-          button_type: buttonType,
-          provider: provider || ''
-        });
+        gtag('event', 'whatsapp_click', { button_type: buttonType, provider: provider || '' });
       }
     }
 
-    // === Scroll Reveal (IntersectionObserver) ===
-    const revealElements = document.querySelectorAll('.reveal');
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          revealObserver.unobserve(entry.target);
-        }
+    // Scroll Reveal
+    var revealElements = document.querySelectorAll('.reveal');
+    var revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); }
       });
     }, { threshold: 0.15 });
-    revealElements.forEach(el => revealObserver.observe(el));
+    revealElements.forEach(function(el) { revealObserver.observe(el); });
 
-    // === Navbar Scroll Shadow ===
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 10);
-    });
-
-    // === Mobile Menu Toggle ===
-    const navToggle = document.getElementById('navToggle');
-    const navMobile = document.getElementById('navMobile');
-    navToggle.addEventListener('click', () => {
-      navToggle.classList.toggle('open');
-      navMobile.classList.toggle('open');
+    // Navbar
+    var navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', function() { navbar.classList.toggle('scrolled', window.scrollY > 10); });
+    var navToggle = document.getElementById('navToggle');
+    var navMobile = document.getElementById('navMobile');
+    navToggle.addEventListener('click', function() {
+      navToggle.classList.toggle('open'); navMobile.classList.toggle('open');
       document.body.style.overflow = navMobile.classList.contains('open') ? 'hidden' : '';
     });
-
-    // Close mobile menu when a link is clicked
-    navMobile.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navToggle.classList.remove('open');
-        navMobile.classList.remove('open');
-        document.body.style.overflow = '';
+    navMobile.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        navToggle.classList.remove('open'); navMobile.classList.remove('open'); document.body.style.overflow = '';
       });
     });
   </script>
-
 </body>
 </html>
