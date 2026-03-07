@@ -230,7 +230,7 @@
             html += '<div class="sk-item reveal reveal-up" style="animation-delay:' + (i * 0.05) + 's;">';
             html += '<div class="sk-number">' + (i + 1) + '</div>';
             html += '<div class="sk-content">';
-            if (term.icon) html += '<span class="sk-icon">' + term.icon + '</span>';
+            if (term.title) html += '<h4 style="font-size:1.05rem;font-weight:700;color:var(--text-primary);margin-bottom:6px;">' + term.title + '</h4>';
             html += '<p class="sk-text">' + term.text;
             if (term.reference_path) {
               var refHref = term.reference_path.replace('/', '') + '.html';
