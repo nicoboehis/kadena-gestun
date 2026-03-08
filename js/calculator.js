@@ -141,6 +141,7 @@
       }
 
       if (inp) {
+        inp.setAttribute('placeholder', 'masukkan angka');
         inp.addEventListener('input', function () { formatInput(inp); });
         inp.addEventListener('keydown', function (e) {
           if (e.key === 'Enter') { e.preventDefault(); calculate(w); }
