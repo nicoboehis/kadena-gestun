@@ -72,14 +72,25 @@
     .calc-net-amount { display: block; font-size: var(--font-size-2xl); font-weight: 800; color: var(--primary); }
     .calc-result-details { display: flex; flex-direction: column; gap: var(--space-xs); font-size: var(--font-size-sm); color: var(--text-secondary); margin-bottom: var(--space-md); }
     .calc-disclaimer { font-size: 0.75rem; color: var(--text-tertiary); font-style: italic; margin-top: var(--space-sm); margin-bottom: 0; }
-    /* Provider Chips (menggantikan logo image agar selalu tampil) */
-    .provider-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
-    .provider-chip { display: inline-flex; align-items: center; gap: 6px; padding: 8px 18px; background: var(--bg-white); border: 1.5px solid var(--border); border-radius: var(--radius-full); font-size: var(--font-size-sm); font-weight: 600; color: var(--text-primary); white-space: nowrap; transition: all var(--transition-base); }
-    .provider-chip:hover { border-color: var(--primary); box-shadow: var(--shadow); transform: translateY(-2px); }
-    .provider-chip .chip-icon { font-size: 1.1rem; }
+    /* Provider Logos */
+    .provider-logos { display: grid; grid-template-columns: repeat(11, minmax(0, 1fr)); align-items: center; justify-items: center; column-gap: 24px; row-gap: 20px; max-width: 1180px; margin: 0 auto; }
+    .provider-logo { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 44px; }
+    .provider-logo img { display: block; width: auto; max-width: 100%; height: auto; max-height: 32px; object-fit: contain; }
+    .provider-logo img.is-wide { max-height: 28px; }
+    .provider-logo img.is-tall { max-height: 36px; }
     /* Hero Image */
     .hero__image { margin-top: var(--space-2xl); }
     .hero__image img { width: 100%; max-width: 600px; margin: 0 auto; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
+    @media (max-width: 1024px) {
+      .provider-logos { grid-template-columns: repeat(6, minmax(0, 1fr)); max-width: 900px; }
+    }
+    @media (max-width: 767px) {
+      .provider-logos { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px 16px; }
+      .provider-logo { min-height: 40px; }
+      .provider-logo img { max-height: 26px; }
+      .provider-logo img.is-wide { max-height: 23px; }
+      .provider-logo img.is-tall { max-height: 30px; }
+    }
   </style>
 
   <!-- Google Analytics (GA4) — UNCOMMENT & GANTI ID setelah punya -->
@@ -248,16 +259,28 @@
     <section class="providers">
       <div class="container">
         <p class="providers__title">Melayani Pencairan Limit Dari</p>
-        <div class="provider-chips">
-          <span class="provider-chip"><span class="chip-icon">🛒</span> Shopee PayLater</span>
-          <span class="provider-chip"><span class="chip-icon">💳</span> Kredivo</span>
-          <span class="provider-chip"><span class="chip-icon">🛍️</span> Akulaku</span>
-          <span class="provider-chip"><span class="chip-icon">💳</span> GoPay Later</span>
-          <span class="provider-chip"><span class="chip-icon">💳</span> DANA</span>
-          <span class="provider-chip"><span class="chip-icon">💳</span> Indodana</span>
-          <span class="provider-chip"><span class="chip-icon">⚡</span> Atome</span>
-          <span class="provider-chip"><span class="chip-icon">💳</span> Visa</span>
-          <span class="provider-chip"><span class="chip-icon">💳</span> Mastercard</span>
+        <div class="provider-logos" aria-label="Provider paylater dan kartu kredit yang dilayani">
+          <div class="provider-logo"><img src="assets/logos/shopee-paylater.png" alt="Shopee PayLater" class="is-wide" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/kredivo.png" alt="Kredivo" class="is-wide" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/akulaku.png" alt="Akulaku" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/gopaylater.png" alt="GoPay Later" class="is-wide" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/dana-paylater.png" alt="DANA PayLater" class="is-wide" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/indodana.png" alt="Indodana" class="is-wide" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/atome.png" alt="Atome" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/tiktok-paylater.png" alt="TikTok PayLater" class="is-wide" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/blibli-paylater.png" alt="Blibli PayLater" class="is-wide" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/bca-paylater.png" alt="BCA PayLater" class="is-wide" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/allo-bank-paylater.png" alt="Allo Bank PayLater" class="is-wide" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/livin-mandiri-paylater.png" alt="Livin Mandiri PayLater" class="is-wide" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/jenius-paylater.png" alt="Jenius PayLater" class="is-wide" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/yup-paylater.png" alt="YUP PayLater" class="is-tall" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/credinex.png" alt="Credinex" class="is-wide" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/flip-cicilan-instan.png" alt="Flip Cicilan Instan" class="is-wide" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/bri-ceria.png" alt="BRI Ceria" class="is-wide" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/honest.png" alt="Honest" class="is-tall" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/kartu-kredit.png" alt="Mastercard" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/kartu-kredit-2.png" alt="Visa" loading="lazy"></div>
+          <div class="provider-logo"><img src="assets/logos/kartu-kredit-3.png" alt="JCB" loading="lazy"></div>
         </div>
       </div>
     </section>
