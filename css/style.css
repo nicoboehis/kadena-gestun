@@ -1440,3 +1440,13 @@ body {
   flex-direction: column;
   transform: none !important;
 }
+
+/* ============================================================
+   PATCH v2: Support pages that toggle .open on the hamburger button
+   instead of adding .open directly to .navbar__mobile.
+   ============================================================ */
+.navbar:has(.navbar__toggle.open) .navbar__mobile {
+  display: flex !important;
+  flex-direction: column;
+  transform: none !important;
+}
