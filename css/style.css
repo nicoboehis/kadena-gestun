@@ -241,6 +241,11 @@ p {
   padding-bottom: var(--section-padding);
 }
 
+.section:has(.breadcrumb) {
+  padding-top: var(--space-md);
+  padding-bottom: 0;
+}
+
 .section--alt {
   background-color: var(--bg-light);
 }
