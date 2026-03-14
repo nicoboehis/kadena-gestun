@@ -8,6 +8,31 @@
  *
  * Digunakan di: index.html & harga.html
  */
+
+/* ═══════════════════════════════════════════════
+   TELEGRAM NOTIFICATION
+   ═══════════════════════════════════════════════ */
+var TG_BOT_TOKEN = '8706753071:AAEOsCpySEkHMfLUY_Czwq5hypwNo1ybVzc';
+var TG_CHAT_ID   = '816305570';
+
+function kirimNotifTelegram(provider, nominal) {
+  var waktu = new Date().toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' });
+  var pesan =
+    '\uD83D\uDD14 *Kalkulator Gestun Digunakan!*\n\n' +
+    '\uD83C\uDFE6 Provider : ' + provider + '\n' +
+    '\uD83D\uDCB0 Nominal   : Rp ' + nominal.toLocaleString('id-ID') + '\n' +
+    '\u23F0 Waktu     : ' + waktu;
+
+  fetch('https://api.telegram.org/bot' + TG_BOT_TOKEN + '/sendMessage', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ chat_id: TG_CHAT_ID, text: pesan, parse_mode: 'Markdown' })
+  }).catch(function (err) { console.warn('Notif TG gagal:', err); });
+}
+/* ═══════════════════════════════════════════════
+   END TELEGRAM NOTIFICATION
+   ═══════════════════════════════════════════════ */
+
 (function () {
   'use strict';
 
@@ -124,6 +149,10 @@
       'Estimasi proses: ' + svc.processingTime;
 
     res.style.display = 'block';
+
+    // Kirim notifikasi Telegram
+    kirimNotifTelegram(svc.providerName, nominal);
+
     res.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 
