@@ -1,0 +1,8 @@
+.env
+gsc-credentials.json
+node_modules/
+package*.json
+*-audit.js
+gsc-request-indexing.js
+purge-cache.js
+redirect-trace.js
